@@ -1,0 +1,77 @@
+#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=20
+#SBATCH --cpus-per-task=2
+#SBATCH --mem=200000MB
+#SBATCH --time=00:59:00
+#SBATCH -p regular1
+#SBATCH --output=i_rhocut.out
+#SBATCH --error=i_rhocut.err
+#SBATCH --mail-type=END
+#SBATCH --mail-user=atan@sissa.it
+
+
+# define sequence for ecutwfc
+ecutwfc=($(seq 50 10 120))
+
+# creates folder for cutoff
+mkdir -p rhocutoff
+cd rhocutoff/
+
+# do loop for k cutoff
+for wfcut in ${ecutwfc[@]}
+do
+
+mkdir -p ecutwfc${wfcut}
+cd ecutwfc$wfcut/
+
+# define variable for ecutrho as a function of ecwfc
+ecrho=$(( 4*wfcut ))
+
+cat << EOF > Sc_rhocut${wfcut}.scf.in
+ &control 
+	calculation='scf'
+	restart_mode='from_scratch',
+	prefix='scandium',
+	pseudo_dir='../../',
+	outdir='sc_rhocut.out'
+ /
+ &system
+	ibrav=4
+	celldm(1)=6.2531037
+	celldm(3)=1.594
+	nat=2
+	ntyp=1
+	ecutwfc=$wfcut
+	ecutrho=$ecrho
+	occupations='smearing'
+	smearing='mv'
+	degauss=0.02
+
+ /
+ &electrons
+	mixing_mode='plain'
+	mixing_beta=0.7
+	diagonalization='david'
+	conv_thr=1.0d-8
+ /
+
+ATOMIC_SPECIES
+ Sc 44.596 Sc.pz-spn-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS crystal
+ Sc 0.00 0.00 0.00
+ Sc 0.666666666667 0.333333333333 0.5
+K_POINTS automatic
+12 12 8 0 0 0
+EOF
+
+#change directory to where qe directory is
+mpirun -np 20 /home/atan/q-e-qe-7.2/bin/pw.x < Sc_rhocut${wfcut}.scf.in > Sc_rhocut${wfcut}.scf.out
+
+#uncomment to remove the output file
+# rm -r sc_rhocut.out 
+ 
+cd ..
+
+done

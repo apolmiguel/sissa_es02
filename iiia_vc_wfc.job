@@ -1,0 +1,88 @@
+#!/bin/bash
+#SBATCH --ntasks=64
+#SBATCH --cpus-per-task=2
+#SBATCH --mem=100000MB
+#SBATCH --time=08:59:00
+#SBATCH -p regular2
+#SBATCH --output=iiia_vc_scf.out
+#SBATCH --error=iiia_vc_scf.err
+#SBATCH --mail-type=END
+#SBATCH --mail-user=atan@sissa.it
+
+. /home/atan/bin/module_load_gnu
+
+NKVAR = $(($SLURM_NTASKS / 4 )) #npools parallelization option in QE
+
+#mkdir -p vc_smr0.01
+cd vc_smr0.01/
+
+#mkdir -p wfcutoff
+cd wfcutoff/
+
+ecutwfc=($(seq 50 10 120))
+
+for wfcut in ${ecutwfc[@]}
+do
+
+mkdir -p wfc${wfcut}
+cd wfc$wfcut/
+
+ecrho=$(( 4*wfcut ))
+
+
+cat << EOF > Sc_wfcut${wfcut}.vcrelax.in
+ &control
+	calculation='vc-relax'
+	restart_mode='from_scratch',
+	prefix='scandium',
+	pseudo_dir='../../../',
+	outdir='sc_vcrelax.out'
+ /
+
+ &system
+	ibrav=4
+	celldm(1)=6.2531037
+	celldm(3)=1.594
+	nat=2
+	ntyp=1
+	ecutwfc=$wfcut
+	ecutrho=$ecrho
+	occupations='smearing'
+	smearing='mv'
+	degauss=0.01
+ /
+
+ &electrons
+	mixing_mode='plain'
+	mixing_beta=0.7
+	diagonalization='david'
+	conv_thr=1.0d-8
+ /
+
+ &ions
+ /
+
+ &cell
+	press=0
+ /
+
+ATOMIC_SPECIES
+ Sc 44.596 Sc.pz-spn-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS crystal
+ Sc 0.00 0.00 0.00
+ Sc 0.666666666667 0.333333333333 0.5
+
+K_POINTS automatic
+ 12 12 8 0 0 0
+EOF
+
+mpirun -np $SLURM_NTASKS /home/atan/q-e-qe-7.2/bin/pw.x -nk $NKVAR < Sc_wfcut${wfcut}.vcrelax.in > Sc_wfcut${wfcut}.vcrelax.out
+
+#uncomment to remove the output file
+# rm -r sc_vcrelax.out 
+
+cd ..
+
+done
+

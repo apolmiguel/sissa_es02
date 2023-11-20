@@ -1,0 +1,85 @@
+#!/bin/bash
+#SBATCH --ntasks=64
+#SBATCH --cpus-per-task=2
+#SBATCH --mem=100000MB
+#SBATCH --time=08:59:00
+#SBATCH -p regular2
+#SBATCH --output=iiib_vc_kptm.out
+#SBATCH --error=iii_vc_kptm.err
+#SBATCH --mail-type=END
+#SBATCH --mail-user=atan@sissa.it
+
+NKVAR = $(($SLURM_NTASKS / 4)) 
+wfcut = 70
+ecrho = 360
+smr = 0.01 
+
+cd vc_smr0.01/
+
+#mkdir -p kptconv
+cd kptconv/
+
+kptmult=($(seq 1 1 12))
+for kpt in ${kptmult[@]}
+do
+
+kpt_x=$((kpt*3))
+kpt_y=$((kpt*3))
+kpt_z=$((kpt*2))
+
+mkdir -p kptm${kpt}
+cd kptm$kpt/
+
+cat << EOF > Sc_iii_kptm${kpt}.vcrelax.in
+ &control
+	calculation='vc-relax'
+	restart_mode='from_scratch',
+	prefix='scandium',
+	pseudo_dir='../../../',
+	outdir='sc_vcrelax.out'
+ /
+
+ &system
+	ibrav=4
+	celldm(1)=6.2531037
+	celldm(3)=1.594
+	nat=2
+	ntyp=1
+	ecutwfc=$wfcut
+	ecutrho=$ecrho
+	occupations='smearing'
+	smearing='mv'
+	degauss=$smr
+ /
+
+ &electrons
+	mixing_mode='plain'
+	mixing_beta=0.7
+	diagonalization='david'
+	conv_thr=1.0d-8
+ /
+
+ &ions
+ /
+
+ &cell
+	press=0
+ /
+
+ATOMIC_SPECIES
+ Sc 44.596 Sc.pz-spn-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS crystal
+ Sc 0.00 0.00 0.00
+ Sc 0.666666666667 0.333333333333 0.5
+
+K_POINTS automatic
+$kpt_x $kpt_y $kpt_z 0 0 0
+EOF
+
+mpirun -np $SLRUM_NTASKS /home/atan/q-e-qe-7.2/bin/pw.x -nk $NKVAR < Sc_iii_kptm${kpt}.vcrelax.in > Sc_iii_kptm${kpt}.vcrelax.out
+
+cd ..
+
+done
+

@@ -1,0 +1,95 @@
+#!/bin/bash
+#SBATCH --ntasks=40
+#SBATCH --cpus-per-task=2
+#SBATCH --mem=200000MB
+#SBATCH --time=05:59:00
+#SBATCH -p regular1
+#SBATCH --output=ii_smearing.out
+#SBATCH --error=ii_smearing.err
+#SBATCH --mail-type=END
+#SBATCH --mail-user=atan@sissa.it
+
+. /home/atan/bin/module_load_gnu
+
+export OMP_NUM_THREADS=1
+
+#cd /home/atan/es02_2022_project
+
+# creates folder for cutoff. comment out if initial runs have already been made
+#mkdir -p smearing
+cd smearing/
+
+# do loop for smearing parameter
+for smr in 0.002 0.001 ;
+do
+
+mkdir -p smearing_kpt${smr}
+cd smearing_kpt$smr/
+
+# do loop for kpt convergence. Change values accordingly.
+kptmult=($(seq 2 1 12))
+for kpt in ${kptmult[@]}
+do
+
+kpt_x=$((kpt*3))
+kpt_y=$((kpt*3))
+kpt_z=$((kpt*2))
+
+mkdir -p kptmult${kpt}
+cd kptmult$kpt
+
+# define variable for ecutrho as a function of ecwfc
+cat << EOF > Sc_smearing${smr}_kpt${kpt}.scf.in
+ &control 
+	calculation='scf'
+	restart_mode='from_scratch',
+	prefix='scandium',
+	pseudo_dir='../../../',
+	outdir='sc_smearing.out'
+ /
+ &system
+	ibrav=4
+	celldm(1)=6.2531037
+    	celldm(3)=1.594
+	nat=2
+	ntyp=1
+	ecutwfc=80
+	ecutrho=320
+	occupations='smearing'
+	smearing='mv'
+	degauss=$smr
+
+ /
+ &electrons
+	mixing_mode='plain'
+	mixing_beta=0.7
+	diagonalization='david'
+	conv_thr=1.0d-8
+ /
+
+ATOMIC_SPECIES
+ Sc 44.596 Sc.pz-spn-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS crystal
+ Sc 0.00 0.00 0.00
+ Sc 0.666666666667 0.333333333333 0.5
+K_POINTS automatic
+$kpt_x $kpt_y $kpt_z 0 0 0
+EOF
+
+
+# make sure pw.x directory is correct
+mpirun -np $SLURM_NTASKS /home/atan/q-e-qe-7.2/bin/pw.x < Sc_smearing${smr}_kpt${kpt}.scf.in > Sc_smearing${smr}_kpt${kpt}.scf.out
+
+#uncomment to remove the output file
+# rm -r sc_rhocut.out 
+
+cd ..
+
+done
+
+cd ..
+
+done
+
+
