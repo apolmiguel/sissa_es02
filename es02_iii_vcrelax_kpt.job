@@ -1,10 +1,10 @@
 #!/bin/bash
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=20
+#SBATCH --ntasks=16
 #SBATCH --cpus-per-task=2
-#SBATCH --mem=200000MB
+#SBATCH --mem=50G
 #SBATCH --time=08:59:00
-#SBATCH -p regular1
+#SBATCH -A Sis23_degironc_1
+#SBATCH -p boost_usr_prod
 #SBATCH --output=iii_kptm.out
 #SBATCH --error=iii_kptm.err
 #SBATCH --mail-type=END
@@ -73,7 +73,8 @@ K_POINTS automatic
 $kpt_x $kpt_y $kpt_z 0 0 0
 EOF
 
-mpirun -np 20 /home/atan/q-e-qe-7.2/bin/pw.x -nk 5 < Sc_iii_kptm${kpt}.vcrelax.in > Sc_iii_kptm${kpt}.vcrelax.out
+
+mpirun -np $SLURM_NTASKS $PWX_DIR -nk $((SLURM_NTASKS/4)) < Sc_iii_kptm${kpt}.vcrelax.in > Sc_iii_kptm${kpt}.vcrelax.out
 
 cd ..
 

@@ -1,20 +1,19 @@
 #!/bin/bash
-#SBATCH --ntasks=40
+#SBATCH --ntasks=16
 #SBATCH --cpus-per-task=2
-#SBATCH --mem=200000MB
+#SBATCH --mem=50G
 #SBATCH --time=00:59:00
-#SBATCH -p regular11
-#SBATCH --output=i_rhocut.out
-#SBATCH --error=i_rhocut.err
+#SBATCH -A Sis23_degironc_1
+#SBATCH -p boost_usr_prod
+#SBATCH --output=i_wfclower.out
+#SBATCH --error=i_wfclower.err
 #SBATCH --mail-type=END
 #SBATCH --mail-user=atan@sissa.it
 
-. /home/atan/bin/module_load_gnu
+. ~/bin/module_load_gnu
 
-# define sequence for ecutwfc
 ecutwfc=($(seq 10 10 70))
 
-# creates folder for cutoff
 cd rhocutoff/
 mkdir -p wfclower
 cd wfclower/
@@ -67,10 +66,8 @@ K_POINTS automatic
 EOF
 
 #change directory to where qe directory is
-mpirun -np 20 /home/atan/q-e-qe-7.2/bin/pw.x < Sc_wfclower${wfcut}.scf.in > Sc_wfclower${wfcut}.scf.out
+mpirun -np $SLURM_NTASKS $PWX_DIR < Sc_wfclower${wfcut}.scf.in > Sc_wfclower${wfcut}.scf.out
 
-#uncomment to remove the output file
-# rm -r sc_rhocut.out 
  
 cd ..
 
