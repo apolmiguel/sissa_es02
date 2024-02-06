@@ -1,0 +1,49 @@
+/home/atan/q-e-qe-7.2/bin
+creating thermo_pw file
+creating input file sc.kpt1.scf.in
+creating ph_control file
+ running the phonon calculation for kptmult=1, ecutwfc=80, ecutrho=320
+creating thermo_pw file
+creating input file sc.kpt2.scf.in
+creating ph_control file
+ running the phonon calculation for kptmult=2, ecutwfc=80, ecutrho=320
+creating thermo_pw file
+creating input file sc.kpt3.scf.in
+creating ph_control file
+ running the phonon calculation for kptmult=3, ecutwfc=80, ecutrho=320
+creating thermo_pw file
+creating input file sc.kpt4.scf.in
+creating ph_control file
+ running the phonon calculation for kptmult=4, ecutwfc=80, ecutrho=320
+creating thermo_pw file
+creating input file sc.kpt5.scf.in
+creating ph_control file
+ running the phonon calculation for kptmult=5, ecutwfc=80, ecutrho=320
+creating thermo_pw file
+creating input file sc.kpt6.scf.in
+creating ph_control file
+ running the phonon calculation for kptmult=6, ecutwfc=80, ecutrho=320
+creating thermo_pw file
+creating input file sc.kpt7.scf.in
+creating ph_control file
+ running the phonon calculation for kptmult=7, ecutwfc=80, ecutrho=320
+creating thermo_pw file
+creating input file sc.kpt8.scf.in
+creating ph_control file
+ running the phonon calculation for kptmult=8, ecutwfc=80, ecutrho=320
+creating thermo_pw file
+creating input file sc.kpt9.scf.in
+creating ph_control file
+ running the phonon calculation for kptmult=9, ecutwfc=80, ecutrho=320
+creating thermo_pw file
+creating input file sc.kpt10.scf.in
+creating ph_control file
+ running the phonon calculation for kptmult=10, ecutwfc=80, ecutrho=320
+creating thermo_pw file
+creating input file sc.kpt11.scf.in
+creating ph_control file
+ running the phonon calculation for kptmult=11, ecutwfc=80, ecutrho=320
+creating thermo_pw file
+creating input file sc.kpt12.scf.in
+creating ph_control file
+ running the phonon calculation for kptmult=12, ecutwfc=80, ecutrho=320

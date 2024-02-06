@@ -1,10 +1,10 @@
 #!/bin/bash
-#SBATCH --ntasks=16
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=20
 #SBATCH --cpus-per-task=2
-#SBATCH --mem=50GB
-#SBATCH --time=06:29:00
-#SBATCH -A Sis23_degironc_1
-#SBATCH -p boost_usr_prod
+#SBATCH --mem=200000MB
+#SBATCH --time=04:29:00
+#SBATCH -p regular1
 #SBATCH --output=vc_lower90.out
 #SBATCH --error=vc_lower90.err
 #SBATCH --mail-type=END
@@ -70,7 +70,10 @@ K_POINTS automatic
  12 12 8 0 0 0
 EOF
 
-mpirun -np $SLURM_NTASKS $PWX_DIR < Sc_iii_lower90${wfcut}.vcrelax.in > Sc_iii_lower90${wfcut}.vcrelax.out
+mpirun -np 20 /home/atan/q-e-qe-7.2/bin/pw.x < Sc_iii_lower90${wfcut}.vcrelax.in > Sc_iii_lower90${wfcut}.vcrelax.out
+
+#uncomment to remove the output file
+# rm -r sc_vcrelax.out 
 
 cd ..
 

@@ -1,0 +1,6 @@
+#!/bin/sh
+
+rm -r tmp
+rm -r tpw_results
+
+mkdir -p tmp

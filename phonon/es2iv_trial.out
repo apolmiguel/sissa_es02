@@ -1,0 +1,6 @@
+/home/atan/q-e-qe-7.2/bin
+creating thermo_pw file
+creating input file sc.scf.in
+creating ph_control file
+ running the phonon calculation on a 12x12x8 mesh
+mpirun -np 20 /home/atan/q-e-qe-7.2/bin/thermo_pw.x -nk 5 sc.scf.in sc.scf.out

@@ -1,0 +1,17 @@
+/home/atan/q-e-qe-7.2/bin
+creating thermo_pw file
+creating input file sc.specialk0.scf.in
+creating ph_control file
+ running the phonon calculation for kvec=0 0 0
+creating thermo_pw file
+creating input file sc.specialk1.scf.in
+creating ph_control file
+ running the phonon calculation for kvec=1.25 0 0
+creating thermo_pw file
+creating input file sc.specialk2.scf.in
+creating ph_control file
+ running the phonon calculation for kvec=1 0.577350 0
+creating thermo_pw file
+creating input file sc.specialk3.scf.in
+creating ph_control file
+ running the phonon calculation for kvec=0 0 0.6466778416

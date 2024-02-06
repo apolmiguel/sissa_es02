@@ -1,12 +1,12 @@
 #!/bin/bash
-#SBATCH --ntasks=16
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=20
 #SBATCH --cpus-per-task=2
-#SBATCH --mem=50G
-#SBATCH --time=01:59:00
-#SBATCH -A Sis23_degironc_1
-#SBATCH -p boost_usr_prod
-#SBATCH --output=iii_vc_wfc.out
-#SBATCH --error=iii_vc_wfc.err
+#SBATCH --mem=200000MB
+#SBATCH --time=05:59:00
+#SBATCH -p regular1
+#SBATCH --output=vc_relax_scf.out
+#SBATCH --error=vc_relax_scf.err
 #SBATCH --mail-type=END
 #SBATCH --mail-user=atan@sissa.it
 
@@ -16,7 +16,7 @@ cd vcrelax/
 mkdir -p wfcutoff
 cd wfcutoff/
 
-ecutwfc=($(seq 50 10 120))
+ecutwfc=($(seq 110 10 120))
 
 for wfcut in ${ecutwfc[@]}
 do
@@ -73,7 +73,10 @@ K_POINTS automatic
  12 12 8 0 0 0
 EOF
 
-mpirun -np $SLURM_NTASKS $PWX_DIR < Sc_wfcut${wfcut}.vcrelax.in > Sc_wfcut${wfcut}.vcrelax.out
+mpirun -np 4 /home/atan/q-e-qe-7.2/bin/pw.x < Sc_wfcut${wfcut}.vcrelax.in > Sc_wfcut${wfcut}.vcrelax.out
+
+#uncomment to remove the output file
+# rm -r sc_vcrelax.out 
 
 cd ..
 

@@ -1,0 +1,44 @@
+ &control
+	calculation='vc-relax'
+	restart_mode='from_scratch',
+	prefix='scandium',
+	pseudo_dir='../../../',
+	outdir='sc_vcrelax.out'
+ /
+
+ &system
+	ibrav=4
+	celldm(1)=6.2531037
+	celldm(3)=1.594
+	nat=2
+	ntyp=1
+	ecutwfc=70
+	ecutrho=360
+	occupations='smearing'
+	smearing='mv'
+	degauss=0.02
+ /
+
+ &electrons
+	mixing_mode='plain'
+	mixing_beta=0.7
+	diagonalization='david'
+	conv_thr=1.0d-8
+ /
+
+ &ions
+ /
+
+ &cell
+	press=0
+ /
+
+ATOMIC_SPECIES
+ Sc 44.596 Sc.pz-spn-kjpaw_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS crystal
+ Sc 0.00 0.00 0.00
+ Sc 0.666666666667 0.333333333333 0.5
+
+K_POINTS automatic
+21 21 14 0 0 0

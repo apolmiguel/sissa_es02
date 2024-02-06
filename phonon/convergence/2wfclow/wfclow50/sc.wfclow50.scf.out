@@ -1,0 +1,1231 @@
+
+     Program THERMO_PW v.7.2 starts on 23Jan2024 at 22:49:40 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+         "P. Giannozzi et al., J. Chem. Phys. 152 154105 (2020);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on    20 processors
+
+     MPI processes distributed on     1 nodes
+     K-points division:     npool     =       4
+     R & G space division:  proc/nbgrp/npool/nimage =       5
+     312829 MiB available memory on the printing compute node when the environment starts
+
+     Reading input from _temporary_1
+     file Sc.pz-spn-kjpaw_psl.1.0.0.UPF: wavefunction(s)  3S 3P 3D renormalized
+
+   Info: using nr1, nr2, nr3 values from input
+
+
+     Doing a phonon calculation
+
+     FFT mesh: (   36,   36,   54 )
+
+     Bravais lattice:
+
+     ibrav=  4: hexagonal
+     Cell parameters:
+
+     alat=   6.093687 a.u., c/a=   1.546365
+
+
+     Starting primitive lattice vectors:
+     crystal axes: (cart. coord. in units of alat)
+
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.546365 )  
+
+     Starting reciprocal lattice vectors:
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+
+               b(1) = (  1.000000  0.577350 -0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000 -0.000000  0.646678 )  
+
+     Starting atomic positions in Cartesian axes:
+
+     site n.     atom                  positions (alat units)
+         1           Sc  tau(   1) = (   0.0000000   0.0000000   0.0000000  )
+         2           Sc  tau(   2) = (   0.5000000   0.2886751   0.7731825  )
+
+     Starting atomic positions in crystallographic axes:
+
+     site n.     atom                  positions (cryst. coord.)
+         1           Sc  tau(   1) = (  0.0000000  0.0000000  0.0000000  )
+         2           Sc  tau(   2) = (  0.6666667  0.3333333  0.5000000  )
+
+     The point group 111 D_6h(6/mmm) is compatible with the Bravais lattice.
+
+     The rotation matrices with the order used inside thermo_pw are:
+
+     24 Sym. Ops., with inversion, found (12 have fractional translation)
+
+
+                          s                  frac. trans.
+
+      isym =  1     identity                                     
+
+ cryst.   s( 1) = (  1    0    0   )
+                  (  0    1    0   )
+                  (  0    0    1   )
+
+ cart.    s( 1) = (  1.000  0.000  0.000 )
+                  (  0.000  1.000  0.000 )
+                  (  0.000  0.000  1.000 )
+
+
+      isym =  2     180 deg rotation - cart. axis [0,0,1]        
+
+ cryst.   s( 2) = ( -1      0      0     )    f =(   0.3333 )
+                  (  0     -1      0     )       (  -0.3333 )
+                  (  0      0      1     )       (  -0.5000 )
+
+ cart.    s( 2) = ( -1.000  0.000  0.000 )    f =(   0.5000 )
+                  (  0.000 -1.000  0.000 )       (  -0.2887 )
+                  (  0.000  0.000  1.000 )       (  -0.7732 )
+
+
+      isym =  3     180 deg rotation - cart. axis [0,1,0]        
+
+ cryst.   s( 3) = ( -1    0    0   )
+                  (  1    1    0   )
+                  (  0    0   -1   )
+
+ cart.    s( 3) = ( -1.000  0.000  0.000 )
+                  (  0.000  1.000  0.000 )
+                  (  0.000  0.000 -1.000 )
+
+
+      isym =  4     180 deg rotation - cart. axis [1,0,0]        
+
+ cryst.   s( 4) = (  1      0      0     )    f =(   0.3333 )
+                  ( -1     -1      0     )       (  -0.3333 )
+                  (  0      0     -1     )       (   0.5000 )
+
+ cart.    s( 4) = (  1.000  0.000  0.000 )    f =(   0.5000 )
+                  (  0.000 -1.000  0.000 )       (  -0.2887 )
+                  (  0.000  0.000 -1.000 )       (   0.7732 )
+
+
+      isym =  5      60 deg rotation - cryst. axis [0,0,1]       
+
+ cryst.   s( 5) = (  1      1      0     )    f =(   0.3333 )
+                  ( -1      0      0     )       (  -0.3333 )
+                  (  0      0      1     )       (  -0.5000 )
+
+ cart.    s( 5) = (  0.500 -0.866  0.000 )    f =(   0.5000 )
+                  (  0.866  0.500  0.000 )       (  -0.2887 )
+                  (  0.000  0.000  1.000 )       (  -0.7732 )
+
+
+      isym =  6      60 deg rotation - cryst. axis [0,0,-1]      
+
+ cryst.   s( 6) = (  0     -1      0     )    f =(   0.3333 )
+                  (  1      1      0     )       (  -0.3333 )
+                  (  0      0      1     )       (  -0.5000 )
+
+ cart.    s( 6) = (  0.500  0.866  0.000 )    f =(   0.5000 )
+                  ( -0.866  0.500  0.000 )       (  -0.2887 )
+                  (  0.000  0.000  1.000 )       (  -0.7732 )
+
+
+      isym =  7     120 deg rotation - cryst. axis [0,0,1]       
+
+ cryst.   s( 7) = (  0    1    0   )
+                  ( -1   -1    0   )
+                  (  0    0    1   )
+
+ cart.    s( 7) = ( -0.500 -0.866  0.000 )
+                  (  0.866 -0.500  0.000 )
+                  (  0.000  0.000  1.000 )
+
+
+      isym =  8     120 deg rotation - cryst. axis [0,0,-1]      
+
+ cryst.   s( 8) = ( -1   -1    0   )
+                  (  1    0    0   )
+                  (  0    0    1   )
+
+ cart.    s( 8) = ( -0.500  0.866  0.000 )
+                  ( -0.866 -0.500  0.000 )
+                  (  0.000  0.000  1.000 )
+
+
+      isym =  9     180 deg rotation - cryst. axis [1,-1,0]      
+
+ cryst.   s( 9) = (  0   -1    0   )
+                  ( -1    0    0   )
+                  (  0    0   -1   )
+
+ cart.    s( 9) = (  0.500 -0.866  0.000 )
+                  ( -0.866 -0.500  0.000 )
+                  (  0.000  0.000 -1.000 )
+
+
+      isym = 10     180 deg rotation - cryst. axis [2,1,0]       
+
+ cryst.   s(10) = (  1    1    0   )
+                  (  0   -1    0   )
+                  (  0    0   -1   )
+
+ cart.    s(10) = (  0.500  0.866  0.000 )
+                  (  0.866 -0.500  0.000 )
+                  (  0.000  0.000 -1.000 )
+
+
+      isym = 11     180 deg rotation - cryst. axis [0,1,0]       
+
+ cryst.   s(11) = ( -1     -1      0     )    f =(   0.3333 )
+                  (  0      1      0     )       (  -0.3333 )
+                  (  0      0     -1     )       (   0.5000 )
+
+ cart.    s(11) = ( -0.500 -0.866  0.000 )    f =(   0.5000 )
+                  ( -0.866  0.500  0.000 )       (  -0.2887 )
+                  (  0.000  0.000 -1.000 )       (   0.7732 )
+
+
+      isym = 12     180 deg rotation - cryst. axis [1,1,0]       
+
+ cryst.   s(12) = (  0      1      0     )    f =(   0.3333 )
+                  (  1      0      0     )       (  -0.3333 )
+                  (  0      0     -1     )       (   0.5000 )
+
+ cart.    s(12) = ( -0.500  0.866  0.000 )    f =(   0.5000 )
+                  (  0.866  0.500  0.000 )       (  -0.2887 )
+                  (  0.000  0.000 -1.000 )       (   0.7732 )
+
+
+      isym = 13     inversion                                    
+
+ cryst.   s(13) = ( -1      0      0     )    f =(   0.3333 )
+                  (  0     -1      0     )       (  -0.3333 )
+                  (  0      0     -1     )       (   0.5000 )
+
+ cart.    s(13) = ( -1.000  0.000  0.000 )    f =(   0.5000 )
+                  (  0.000 -1.000  0.000 )       (  -0.2887 )
+                  (  0.000  0.000 -1.000 )       (   0.7732 )
+
+
+      isym = 14     inv. 180 deg rotation - cart. axis [0,0,1]   
+
+ cryst.   s(14) = (  1    0    0   )
+                  (  0    1    0   )
+                  (  0    0   -1   )
+
+ cart.    s(14) = (  1.000  0.000  0.000 )
+                  (  0.000  1.000  0.000 )
+                  (  0.000  0.000 -1.000 )
+
+
+      isym = 15     inv. 180 deg rotation - cart. axis [0,1,0]   
+
+ cryst.   s(15) = (  1      0      0     )    f =(   0.3333 )
+                  ( -1     -1      0     )       (  -0.3333 )
+                  (  0      0      1     )       (  -0.5000 )
+
+ cart.    s(15) = (  1.000  0.000  0.000 )    f =(   0.5000 )
+                  (  0.000 -1.000  0.000 )       (  -0.2887 )
+                  (  0.000  0.000  1.000 )       (  -0.7732 )
+
+
+      isym = 16     inv. 180 deg rotation - cart. axis [1,0,0]   
+
+ cryst.   s(16) = ( -1    0    0   )
+                  (  1    1    0   )
+                  (  0    0    1   )
+
+ cart.    s(16) = ( -1.000  0.000  0.000 )
+                  (  0.000  1.000  0.000 )
+                  (  0.000  0.000  1.000 )
+
+
+      isym = 17     inv.  60 deg rotation - cryst. axis [0,0,1]  
+
+ cryst.   s(17) = ( -1   -1    0   )
+                  (  1    0    0   )
+                  (  0    0   -1   )
+
+ cart.    s(17) = ( -0.500  0.866  0.000 )
+                  ( -0.866 -0.500  0.000 )
+                  (  0.000  0.000 -1.000 )
+
+
+      isym = 18     inv.  60 deg rotation - cryst. axis [0,0,-1] 
+
+ cryst.   s(18) = (  0    1    0   )
+                  ( -1   -1    0   )
+                  (  0    0   -1   )
+
+ cart.    s(18) = ( -0.500 -0.866  0.000 )
+                  (  0.866 -0.500  0.000 )
+                  (  0.000  0.000 -1.000 )
+
+
+      isym = 19     inv. 120 deg rotation - cryst. axis [0,0,1]  
+
+ cryst.   s(19) = (  0     -1      0     )    f =(   0.3333 )
+                  (  1      1      0     )       (  -0.3333 )
+                  (  0      0     -1     )       (   0.5000 )
+
+ cart.    s(19) = (  0.500  0.866  0.000 )    f =(   0.5000 )
+                  ( -0.866  0.500  0.000 )       (  -0.2887 )
+                  (  0.000  0.000 -1.000 )       (   0.7732 )
+
+
+      isym = 20     inv. 120 deg rotation - cryst. axis [0,0,-1] 
+
+ cryst.   s(20) = (  1      1      0     )    f =(   0.3333 )
+                  ( -1      0      0     )       (  -0.3333 )
+                  (  0      0     -1     )       (   0.5000 )
+
+ cart.    s(20) = (  0.500 -0.866  0.000 )    f =(   0.5000 )
+                  (  0.866  0.500  0.000 )       (  -0.2887 )
+                  (  0.000  0.000 -1.000 )       (   0.7732 )
+
+
+      isym = 21     inv. 180 deg rotation - cryst. axis [1,-1,0] 
+
+ cryst.   s(21) = (  0      1      0     )    f =(   0.3333 )
+                  (  1      0      0     )       (  -0.3333 )
+                  (  0      0      1     )       (  -0.5000 )
+
+ cart.    s(21) = ( -0.500  0.866  0.000 )    f =(   0.5000 )
+                  (  0.866  0.500  0.000 )       (  -0.2887 )
+                  (  0.000  0.000  1.000 )       (  -0.7732 )
+
+
+      isym = 22     inv. 180 deg rotation - cryst. axis [2,1,0]  
+
+ cryst.   s(22) = ( -1     -1      0     )    f =(   0.3333 )
+                  (  0      1      0     )       (  -0.3333 )
+                  (  0      0      1     )       (  -0.5000 )
+
+ cart.    s(22) = ( -0.500 -0.866  0.000 )    f =(   0.5000 )
+                  ( -0.866  0.500  0.000 )       (  -0.2887 )
+                  (  0.000  0.000  1.000 )       (  -0.7732 )
+
+
+      isym = 23     inv. 180 deg rotation - cryst. axis [0,1,0]  
+
+ cryst.   s(23) = (  1    1    0   )
+                  (  0   -1    0   )
+                  (  0    0    1   )
+
+ cart.    s(23) = (  0.500  0.866  0.000 )
+                  (  0.866 -0.500  0.000 )
+                  (  0.000  0.000  1.000 )
+
+
+      isym = 24     inv. 180 deg rotation - cryst. axis [1,1,0]  
+
+ cryst.   s(24) = (  0   -1    0   )
+                  ( -1    0    0   )
+                  (  0    0    1   )
+
+ cart.    s(24) = (  0.500 -0.866  0.000 )
+                  ( -0.866 -0.500  0.000 )
+                  (  0.000  0.000  1.000 )
+
+
+     point group D_6h(6/mmm)
+     there are 12 classes
+     the character table:
+
+       E     2C6   2C3   C2    3C2'  3C2'' i     2S3   2S6   s_h   3s_d  3s_v 
+A_1g   1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+A_2g   1.00  1.00  1.00  1.00 -1.00 -1.00  1.00  1.00  1.00  1.00 -1.00 -1.00
+B_1g   1.00 -1.00  1.00 -1.00  1.00 -1.00  1.00 -1.00  1.00 -1.00  1.00 -1.00
+B_2g   1.00 -1.00  1.00 -1.00 -1.00  1.00  1.00 -1.00  1.00 -1.00 -1.00  1.00
+E_1g   2.00  1.00 -1.00 -2.00  0.00  0.00  2.00  1.00 -1.00 -2.00  0.00  0.00
+E_2g   2.00 -1.00 -1.00  2.00  0.00  0.00  2.00 -1.00 -1.00  2.00  0.00  0.00
+A_1u   1.00  1.00  1.00  1.00  1.00  1.00 -1.00 -1.00 -1.00 -1.00 -1.00 -1.00
+A_2u   1.00  1.00  1.00  1.00 -1.00 -1.00 -1.00 -1.00 -1.00 -1.00  1.00  1.00
+B_1u   1.00 -1.00  1.00 -1.00  1.00 -1.00 -1.00  1.00 -1.00  1.00 -1.00  1.00
+B_2u   1.00 -1.00  1.00 -1.00 -1.00  1.00 -1.00  1.00 -1.00  1.00  1.00 -1.00
+E_1u   2.00  1.00 -1.00 -2.00  0.00  0.00 -2.00 -1.00  1.00  2.00  0.00  0.00
+E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
+
+     the symmetry operations in each class and the name of the first element:
+
+     E        1
+          identity                                               
+     2C6      5    6
+           60 deg rotation - cryst. axis [0,0,1]                 
+     2C3      7    8
+          120 deg rotation - cryst. axis [0,0,1]                 
+     C2       2
+          180 deg rotation - cart. axis [0,0,1]                  
+     3C2'     4   12   11
+          180 deg rotation - cart. axis [1,0,0]                  
+     3C2''    3    9   10
+          180 deg rotation - cart. axis [0,1,0]                  
+     i       13
+          inversion                                              
+     2S3     17   18
+          inv.  60 deg rotation - cryst. axis [0,0,1]            
+     2S6     19   20
+          inv. 120 deg rotation - cryst. axis [0,0,1]            
+     s_h     14
+          inv. 180 deg rotation - cart. axis [0,0,1]             
+     3s_d    16   24   23
+          inv. 180 deg rotation - cart. axis [1,0,0]             
+     3s_v    15   21   22
+          inv. 180 deg rotation - cart. axis [0,1,0]             
+
+     Space group identification,  24 symmetries:
+
+     Bravais lattice   4  hexagonal                               
+     Point group number  23 / 111  D_6h(6/mmm)
+
+     The coset representatives of the space group with
+     the standard order of operations are:
+
+     Fractional translations in crystal coordinates
+
+      PGS    Fract. transl. (all)          Fract. transl. (no shift)   SGS
+
+        E   1 -0.0000 -0.0000 -0.0000      0.0000  0.0000  0.0000         E   1
+       6z  25 -0.3333  0.3333  0.5000      0.0000  0.0000  0.5000       6z3 110
+       3z  27 -0.0000 -0.0000 -0.0000      0.0000  0.0000  0.0000        3z  27
+       2z   2 -0.3333  0.3333  0.5000      0.0000  0.0000  0.5000       2z1  65
+      3-z  28 -0.0000 -0.0000 -0.0000     -0.0000  0.0000  0.0000       3-z  28
+      6-z  26 -0.3333  0.3333  0.5000     -0.0000  0.0000  0.5000      6-z3 115
+       2x   4 -0.3333  0.3333 -0.5000     -0.5000 -0.0000  0.0000       2x1  67
+     2210  30 -0.0000 -0.0000 -0.0000      0.0000  0.0000  0.0000      2210  30
+     2110  32 -0.3333  0.3333 -0.5000      0.0000  0.0000  0.0000      2110  32
+       2y   3 -0.0000 -0.0000 -0.0000      0.0000  0.0000  0.0000        2y   3
+     2010  31 -0.3333  0.3333 -0.5000      0.0000  0.5000  0.0000     20101 124
+    21-10  29 -0.0000 -0.0000 -0.0000      0.0000  0.0000  0.0000     21-10  29
+        i  33 -0.3333  0.3333 -0.5000      0.0000  0.0000  0.0000         i  33
+      i6z  57 -0.0000 -0.0000 -0.0000      0.0000  0.0000  0.0000       i6z  57
+      i3z  59 -0.3333  0.3333 -0.5000      0.0000  0.0000  0.0000       i3z  59
+      i2z  34 -0.0000 -0.0000 -0.0000      0.0000  0.0000  0.0000       i2z  34
+     i3-z  60 -0.3333  0.3333 -0.5000      0.0000  0.0000  0.0000      i3-z  60
+     i6-z  58 -0.0000 -0.0000 -0.0000      0.0000  0.0000  0.0000      i6-z  58
+      i2x  36 -0.0000 -0.0000 -0.0000      0.0000  0.0000  0.0000       i2x  36
+    i2210  62 -0.3333  0.3333  0.5000     -0.0000  0.5000  0.5000    i2210n 167
+    i2110  64 -0.0000 -0.0000 -0.0000      0.0000  0.0000  0.0000     i2110  64
+      i2y  35 -0.3333  0.3333  0.5000     -0.5000  0.0000  0.5000      i2yn 132
+    i2010  63 -0.0000 -0.0000 -0.0000      0.0000  0.0000  0.0000     i2010  63
+   i21-10  61 -0.3333  0.3333  0.5000      0.0000 -0.0000  0.5000   i21-10c 163
+
+     PGS = Point group symmetry, SGS = space group symmetry 
+     (no shift) means the part of the fractional translation
+     that cannot be removed by an origin shift
+
+     Fractional translation shift and origin shift in crystal coordinates
+
+      PGS      FT shift                    &Origin shift                 SGS
+
+        E   1 -0.0000 -0.0000 -0.0000      0.0000  0.0000  0.0000         E   1
+       6z  25 -0.3333  0.3333  0.0000     -0.6667 -0.3333  0.0000       6z3 110
+       3z  27  0.0000  0.0000  0.0000      0.0000  0.0000  0.0000        3z  27
+       2z   2 -0.3333  0.3333  0.0000     -0.1667  0.1667  0.0000       2z1  65
+      3-z  28  0.0000  0.0000  0.0000      0.0000  0.0000  0.0000       3-z  28
+      6-z  26 -0.3333  0.3333  0.0000      0.3333  0.6667  0.0000      6-z3 115
+       2x   4  0.1667  0.3333 -0.5000      0.0833  0.1667 -0.2500       2x1  67
+     2210  30  0.0000  0.0000  0.0000      0.0000  0.0000  0.0000      2210  30
+     2110  32 -0.3333  0.3333 -0.5000     -0.1667  0.1667 -0.2500      2110  32
+       2y   3  0.0000  0.0000  0.0000      0.0000  0.0000  0.0000        2y   3
+     2010  31 -0.3333 -0.1667 -0.5000     -0.1667 -0.0833 -0.2500     20101 124
+    21-10  29  0.0000  0.0000  0.0000      0.0000  0.0000  0.0000     21-10  29
+        i  33 -0.3333  0.3333 -0.5000     -0.1667  0.1667 -0.2500         i  33
+      i6z  57 -0.0000 -0.0000 -0.0000      0.0000  0.0000  0.0000       i6z  57
+      i3z  59 -0.3333  0.3333 -0.5000      0.3333  0.6667 -0.2500       i3z  59
+      i2z  34  0.0000  0.0000  0.0000      0.0000  0.0000  0.0000       i2z  34
+     i3-z  60 -0.3333  0.3333 -0.5000     -0.6667 -0.3333 -0.2500      i3-z  60
+     i6-z  58 -0.0000 -0.0000 -0.0000      0.0000  0.0000  0.0000      i6-z  58
+      i2x  36  0.0000  0.0000  0.0000      0.0000  0.0000  0.0000       i2x  36
+    i2210  62 -0.3333 -0.1667  0.0000     -0.1667 -0.0833  0.0000    i2210n 167
+    i2110  64  0.0000  0.0000  0.0000      0.0000  0.0000  0.0000     i2110  64
+      i2y  35  0.1667  0.3333  0.0000      0.0833  0.1667  0.0000      i2yn 132
+    i2010  63  0.0000  0.0000  0.0000      0.0000  0.0000  0.0000     i2010  63
+   i21-10  61 -0.3333  0.3333  0.0000     -0.1667  0.1667  0.0000   i21-10c 163
+
+
+     The origin shift gives the point of application of the symmetry
+     Subtract this vector from all atomic coordinates
+     to have this symmetry centered at the origin
+
+
+     Space group number  194
+
+     Space group P6_3/mmc   (group number 194).
+     The origin coincides with the ITA tables.
+
+     The Laue class is D_6h(6/mmm)
+
+     ----------------------------------------------------------------------
+     Ions are relaxed in each calculation
+     ----------------------------------------------------------------------
+
+     Total mass of this unit cell         89.1920 a.m.u.
+     Density of this solid                3298.29 kg/m^3         3.2983 g/cm^3
+
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+     Doing a self-consistent calculation
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) = 120000
+     Max angular momentum in pseudopotentials (lmaxx) =  4
+
+     WARNING: check_stop already initialized
+
+     K-points division:     npool     =       4
+     R & G space division:  proc/nbgrp/npool/nimage =       5
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         164     102     32                 5856     2901     532
+     Max         165     103     33                 5859     2902     539
+     Sum         823     511    163                29291    14509    2683
+
+     Using Slab Decomposition
+
+
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       6.0937  a.u.
+     unit-cell volume          =     303.0282 (a.u.)^3
+     number of atoms/cell      =            2
+     number of atomic types    =            1
+     number of electrons       =        22.00
+     number of Kohn-Sham states=           15
+     kinetic-energy cutoff     =      50.0000  Ry
+     charge density cutoff     =     320.0000  Ry
+     scf convergence threshold =      1.0E-10
+     mixing beta               =       0.7000
+     number of iterations used =            8  plain     mixing
+     Exchange-correlation= SLA  PZ   NOGX NOGC
+                           (   1   1   0   0   0   0   0)
+
+     celldm(1)=   6.093687  celldm(2)=   0.000000  celldm(3)=   1.546365
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.546365 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350 -0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000 -0.000000  0.646678 )  
+
+
+     PseudoPot. # 1 for Sc read from file:
+     /home/atan/sissa_es02/Sc.pz-spn-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: 1f9095df0bb42a6568b4e9f256ff075f
+     Pseudo is Projector augmented-wave + core cor, Zval = 11.0
+     Generated using 'atomic' code by A. Dal Corso  v.7.1
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1173 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        Sc            11.00    44.59600     Sc( 1.00)
+
+     24 Sym. Ops., with inversion, found (12 have fractional translation)
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           Sc  tau(   1) = (   0.0000000   0.0000000   0.0000000  )
+         2           Sc  tau(   2) = (   0.5000000   0.2886751   0.7731825  )
+
+     number of k points=   168  Marzari-Vanderbilt smearing, width (Ry)=  0.0200
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:    29291 G-vectors     FFT dimensions: (  36,  36,  54)
+
+     Smooth grid:    14509 G-vectors     FFT dimensions: (  27,  27,  48)
+
+     Estimated max dynamical RAM per process >      12.85 MB
+
+     Estimated total dynamical RAM >     235.46 MB
+
+     Check: negative core charge=   -0.000016
+
+     Initial potential from superposition of free atoms
+
+     starting charge      21.9956, renormalised to      22.0000
+     Starting wfcs are   20 randomized atomic wfcs
+     Checking if some PAW data can be deallocated... 
+
+     total cpu time spent up to now is        1.0 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-02,  avg # of iterations =  3.0
+
+     Threshold (ethr) on eigenvalues was too large:
+     Diagonalizing with lowered threshold
+
+     Davidson diagonalization with overlap
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  3 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  4 eigenvalues not converged
+     c_bands:  5 eigenvalues not converged
+     c_bands:  4 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  3 eigenvalues not converged
+     c_bands:  3 eigenvalues not converged
+     ethr =  7.98E-06,  avg # of iterations = 16.1
+
+     total cpu time spent up to now is        6.1 secs
+
+     total energy              =    -306.86691881 Ry
+     estimated scf accuracy    <       0.01731538 Ry
+
+     iteration #  2     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  7.87E-05,  avg # of iterations =  4.0
+
+     total cpu time spent up to now is        7.5 secs
+
+     total energy              =    -306.87110580 Ry
+     estimated scf accuracy    <       0.00196145 Ry
+
+     iteration #  3     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     ethr =  8.92E-06,  avg # of iterations =  5.6
+
+     total cpu time spent up to now is        9.1 secs
+
+     total energy              =    -306.87178041 Ry
+     estimated scf accuracy    <       0.00008212 Ry
+
+     iteration #  4     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     c_bands:  2 eigenvalues not converged
+     ethr =  3.73E-07,  avg # of iterations =  9.4
+
+     total cpu time spent up to now is       11.2 secs
+
+     total energy              =    -306.87190169 Ry
+     estimated scf accuracy    <       0.00004716 Ry
+
+     iteration #  5     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.14E-07,  avg # of iterations =  5.7
+
+     total cpu time spent up to now is       12.8 secs
+
+     total energy              =    -306.87191919 Ry
+     estimated scf accuracy    <       0.00000758 Ry
+
+     iteration #  6     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  3.44E-08,  avg # of iterations =  6.0
+
+     total cpu time spent up to now is       14.3 secs
+
+     total energy              =    -306.87192265 Ry
+     estimated scf accuracy    <       0.00000007 Ry
+
+     iteration #  7     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     c_bands:  2 eigenvalues not converged
+     ethr =  3.14E-10,  avg # of iterations = 15.4
+
+     total cpu time spent up to now is       17.5 secs
+
+     total energy              =    -306.87192319 Ry
+     estimated scf accuracy    <          9.2E-10 Ry
+
+     iteration #  8     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     c_bands:  1 eigenvalues not converged
+     ethr =  4.16E-12,  avg # of iterations = 14.1
+
+     total cpu time spent up to now is       20.2 secs
+
+     total energy              =    -306.87192319 Ry
+     estimated scf accuracy    <          8.1E-09 Ry
+
+     iteration #  9     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  4.16E-12,  avg # of iterations =  9.0
+
+     total cpu time spent up to now is       22.3 secs
+
+     total energy              =    -306.87192319 Ry
+     estimated scf accuracy    <          2.2E-09 Ry
+
+     iteration # 10     ecut=    50.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  4.16E-12,  avg # of iterations =  4.1
+
+     total cpu time spent up to now is       23.7 secs
+
+     End of self-consistent calculation
+
+     Number of k-points >= 100: set verbosity='high' to print the bands.
+
+     the Fermi energy is    10.0767 ev
+
+!    total energy              =    -306.87192319 Ry
+     total all-electron energy =     -3050.012694 Ry
+     estimated scf accuracy    <          9.6E-11 Ry
+     smearing contrib. (-TS)   =      -0.00083767 Ry
+     internal energy E=F+TS    =    -306.87108552 Ry
+
+     The total energy is F=E-TS. E is the sum of the following terms:
+     one-electron contribution =     -67.46784233 Ry
+     hartree contribution      =      40.08316620 Ry
+     xc contribution           =     -34.67515066 Ry
+     ewald contribution        =    -131.05084962 Ry
+     one-center paw contrib.   =    -113.76040911 Ry
+
+     convergence has been achieved in  10 iterations
+
+     Writing all to output data dir ../tmp//g1/sc.save/
+
+     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+     Computing geometry     1
+     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     Waiting for input...
+     Reading input from standard input
+
+     Reading xml data from directory:
+
+     ../tmp//g1/sc.save/
+     file Sc.pz-spn-kjpaw_psl.1.0.0.UPF: wavefunction(s)  3S 3P 3D renormalized
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PZ
+                           (   1   1   0   0   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         164     102     32                 5856     2901     532
+     Max         165     103     33                 5859     2902     539
+     Sum         823     511    163                29291    14509    2683
+
+     Using Slab Decomposition
+
+
+     Check: negative core charge=   -0.000016
+     Reading collected, re-writing distributed wavefunctions
+
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+     Doing work    1 /     1
+     Doing the work of image    1 of geometry    1
+      q point number     1, representations:
+       0 1 2 3 4
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+                          --------------------------
+     Calculation of q =    0.0000000   0.0000000   0.0000000
+                          --------------------------
+
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         164     102     32                 5856     2901     532
+     Max         165     103     33                 5859     2902     539
+     Sum         823     511    163                29291    14509    2683
+
+     Using Slab Decomposition
+
+
+     Title: 
+     phonons at Gamma                                                           
+
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       6.0937  a.u.
+     unit-cell volume          =     303.0282 (a.u.)^3
+     number of atoms/cell      =            2
+     number of atomic types    =            1
+     number of electrons       =        22.00
+     number of Kohn-Sham states=           15
+     kinetic-energy cutoff     =      50.0000  Ry
+     charge density cutoff     =     320.0000  Ry
+     Exchange-correlation= PZ
+                           (   1   1   0   0   0   0   0)
+
+     celldm(1)=   6.093687  celldm(2)=   0.000000  celldm(3)=   1.546365
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (  -0.500000   0.866025   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.546365 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.577350 -0.000000 )  
+               b(2) = (  0.000000  1.154701  0.000000 )  
+               b(3) = (  0.000000 -0.000000  0.646678 )  
+
+
+     PseudoPot. # 1 for Sc read from file:
+     /home/atan/sissa_es02/Sc.pz-spn-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: 1f9095df0bb42a6568b4e9f256ff075f
+     Pseudo is Projector augmented-wave + core cor, Zval = 11.0
+     Generated using 'atomic' code by A. Dal Corso  v.7.1
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1173 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     atomic species   valence    mass     pseudopotential
+        Sc            11.00    44.59600     Sc( 1.00)
+
+     24 Sym. Ops., with inversion, found (12 have fractional translation)
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           Sc  tau(   1) = (   0.0000000   0.0000000   0.0000000  )
+         2           Sc  tau(   2) = (   0.5000000   0.2886751   0.7731825  )
+
+     number of k points=   168  Marzari-Vanderbilt smearing, width (Ry)=  0.0200
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:    29291 G-vectors     FFT dimensions: (  36,  36,  54)
+
+     Smooth grid:    14509 G-vectors     FFT dimensions: (  27,  27,  48)
+
+     Estimated max dynamical RAM per process >       7.76 MB
+
+     Estimated total dynamical RAM >     155.13 MB
+
+     Check: negative core charge=   -0.000016
+
+     The potential is recalculated from file :
+     ../tmp//g1/_ph0/sc.save/charge-density
+
+     Starting wfcs are   20 atomic wfcs
+     Checking if some PAW data can be deallocated... 
+
+     Band Structure Calculation
+     Davidson diagonalization with overlap
+
+     ethr =  4.55E-11,  avg # of iterations = 36.2
+
+     Total points  168
+     Diagonalized points  168   Symmetrized points    0
+
+     total cpu time spent up to now is       34.7 secs
+
+     End of band structure calculation
+
+     Number of k-points >= 100: set verbosity='high' to print the bands.
+
+     the Fermi energy is    10.0767 ev
+     (compare with:    10.0767 eV, computed in scf)
+
+     Writing config to output data dir ../tmp//g1/_ph0/sc.save/
+
+     phonons at Gamma                                                           
+
+     bravais-lattice index     =            4
+     lattice parameter (alat)  =       6.0937  a.u.
+     unit-cell volume          =     303.0282 (a.u.)^3
+     number of atoms/cell      =            2
+     number of atomic types    =            1
+     kinetic-energy cut-off    =      50.0000  Ry
+     charge density cut-off    =     320.0000  Ry
+     convergence threshold     =      1.0E-16
+     beta                      =       0.7000
+     number of iterations used =            4
+     Exchange-correlation= PZ
+                           (   1   1   0   0   0   0   0)
+
+
+     celldm(1)=    6.09369  celldm(2)=    0.00000  celldm(3)=    1.54637
+     celldm(4)=    0.00000  celldm(5)=    0.00000  celldm(6)=    0.00000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  1.0000  0.0000  0.0000 )  
+               a(2) = ( -0.5000  0.8660  0.0000 )  
+               a(3) = (  0.0000  0.0000  1.5464 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.0000  0.5774 -0.0000 )  
+               b(2) = (  0.0000  1.1547  0.0000 )  
+               b(3) = (  0.0000 -0.0000  0.6467 )  
+
+
+     Atoms inside the unit cell: 
+
+     Cartesian axes
+
+     site n.  atom      mass           positions (alat units)
+        1     Sc  44.5960   tau(    1) = (    0.00000    0.00000    0.00000  )
+        2     Sc  44.5960   tau(    2) = (    0.50000    0.28868    0.77318  )
+
+     Computing dynamical matrix for 
+                    q = (   0.0000000   0.0000000   0.0000000 )
+
+     25 Sym.Ops. (with q -> -q+G )
+
+
+     G cutoff =  300.9889  (   5858 G-vectors)     FFT grid: ( 36, 36, 54)
+     G cutoff =  188.1181  (   2902 G-vectors)  smooth grid: ( 27, 27, 48)
+
+     number of k points=   168  Marzari-Vanderbilt smearing, width (Ry)=  0.0200
+
+     PseudoPot. # 1 for Sc read from file:
+     /home/atan/sissa_es02/Sc.pz-spn-kjpaw_psl.1.0.0.UPF
+     MD5 check sum: 1f9095df0bb42a6568b4e9f256ff075f
+     Pseudo is Projector augmented-wave + core cor, Zval = 11.0
+     Generated using 'atomic' code by A. Dal Corso  v.7.1
+     Shape of augmentation charge: PSQ
+     Using radial grid of 1173 points,  6 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+                l(6) =   2
+     Q(r) pseudized with 0 coefficients 
+
+
+     Mode symmetry, D_6h(6/mmm) point group:
+
+
+     Atomic displacements:
+     There are   4 irreducible representations
+
+     Representation     1      1 modes -  To be done
+
+     Representation     2      2 modes -  To be done
+
+     Representation     3      1 modes -  To be done
+
+     Representation     4      2 modes -  To be done
+
+
+
+     Alpha used in Ewald sum =   2.8000
+     PHONON       :     13.18s CPU     13.61s WALL (       1 calls)
+
+
+     Representation #   1 mode #   1
+
+     Self-consistent Calculation
+
+     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
+
+      iter #   1 total cpu time :    18.4 secs   av.it.:  14.0
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  2.355E-04
+
+     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
+
+      iter #   2 total cpu time :    24.3 secs   av.it.:  18.8
+      thresh= 1.534E-03 alpha_mix =  0.700 |ddv_scf|^2 =  7.212E-04
+
+     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
+
+      iter #   3 total cpu time :    29.5 secs   av.it.:  16.5
+      thresh= 2.685E-03 alpha_mix =  0.700 |ddv_scf|^2 =  2.203E-08
+
+     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
+
+      iter #   4 total cpu time :    35.9 secs   av.it.:  20.9
+      thresh= 1.484E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.159E-09
+
+     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
+
+      iter #   5 total cpu time :    41.7 secs   av.it.:  19.0
+      thresh= 3.405E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.943E-11
+
+     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
+
+      iter #   6 total cpu time :    47.4 secs   av.it.:  18.9
+      thresh= 4.408E-07 alpha_mix =  0.700 |ddv_scf|^2 =  5.567E-13
+
+     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
+
+      iter #   7 total cpu time :    53.0 secs   av.it.:  18.1
+      thresh= 7.461E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.744E-15
+
+     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
+
+      iter #   8 total cpu time :    59.1 secs   av.it.:  19.8
+      thresh= 4.176E-09 alpha_mix =  0.700 |ddv_scf|^2 =  1.551E-15
+
+     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
+
+      iter #   9 total cpu time :    64.5 secs   av.it.:  17.0
+      thresh= 3.938E-09 alpha_mix =  0.700 |ddv_scf|^2 =  6.794E-17
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #   2 modes #   2   3
+
+     Self-consistent Calculation
+
+     Pert. #  1: Fermi energy shift (Ry) =    -5.7824E-19     3.8265E-42
+     Pert. #  2: Fermi energy shift (Ry) =     2.5298E-19     2.2959E-41
+
+      iter #   1 total cpu time :    73.3 secs   av.it.:  12.5
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  2.303E-06
+
+     Pert. #  1: Fermi energy shift (Ry) =    -6.3245E-20     0.0000E+00
+     Pert. #  2: Fermi energy shift (Ry) =     1.3101E-19    -8.6096E-42
+
+      iter #   2 total cpu time :    86.3 secs   av.it.:  21.0
+      thresh= 1.518E-04 alpha_mix =  0.700 |ddv_scf|^2 =  2.142E-07
+
+     Pert. #  1: Fermi energy shift (Ry) =    -3.6140E-20    -9.0879E-42
+     Pert. #  2: Fermi energy shift (Ry) =     7.2280E-20     5.9789E-42
+
+      iter #   3 total cpu time :    99.2 secs   av.it.:  21.0
+      thresh= 4.628E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.207E-09
+
+     Pert. #  1: Fermi energy shift (Ry) =     1.0842E-19    -7.1746E-43
+     Pert. #  2: Fermi energy shift (Ry) =     4.1561E-19     5.0820E-43
+
+      iter #   4 total cpu time :   111.4 secs   av.it.:  20.0
+      thresh= 3.475E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.367E-11
+
+     Pert. #  1: Fermi energy shift (Ry) =    -1.0842E-19     1.7937E-43
+     Pert. #  2: Fermi energy shift (Ry) =     7.2280E-20    -5.9789E-44
+
+      iter #   5 total cpu time :   124.3 secs   av.it.:  21.2
+      thresh= 3.697E-07 alpha_mix =  0.700 |ddv_scf|^2 =  5.367E-14
+
+     Pert. #  1: Fermi energy shift (Ry) =    -1.0842E-19    -3.8863E-43
+     Pert. #  2: Fermi energy shift (Ry) =     7.2280E-20    -1.1958E-43
+
+      iter #   6 total cpu time :   137.2 secs   av.it.:  21.1
+      thresh= 2.317E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.097E-15
+
+     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00    -3.8863E-43
+     Pert. #  2: Fermi energy shift (Ry) =     4.3368E-19    -1.1958E-43
+
+      iter #   7 total cpu time :   150.3 secs   av.it.:  21.5
+      thresh= 3.312E-09 alpha_mix =  0.700 |ddv_scf|^2 =  5.858E-18
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #   3 mode #   4
+
+     Self-consistent Calculation
+
+     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
+
+      iter #   1 total cpu time :   154.8 secs   av.it.:  12.1
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  7.065E-06
+
+     Pert. #  1: Fermi energy shift (Ry) =    -8.6165E-27     0.0000E+00
+
+      iter #   2 total cpu time :   160.4 secs   av.it.:  18.5
+      thresh= 2.658E-04 alpha_mix =  0.700 |ddv_scf|^2 =  5.244E-07
+
+     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
+
+      iter #   3 total cpu time :   166.1 secs   av.it.:  18.7
+      thresh= 7.242E-05 alpha_mix =  0.700 |ddv_scf|^2 =  5.336E-09
+
+     Pert. #  1: Fermi energy shift (Ry) =     1.3786E-25     0.0000E+00
+
+      iter #   4 total cpu time :   171.6 secs   av.it.:  17.9
+      thresh= 7.305E-06 alpha_mix =  0.700 |ddv_scf|^2 =  3.556E-11
+
+     Pert. #  1: Fermi energy shift (Ry) =     2.7573E-25     1.5306E-41
+
+      iter #   5 total cpu time :   177.2 secs   av.it.:  18.0
+      thresh= 5.963E-07 alpha_mix =  0.700 |ddv_scf|^2 =  2.449E-14
+
+     Pert. #  1: Fermi energy shift (Ry) =     1.3786E-25     0.0000E+00
+
+      iter #   6 total cpu time :   182.8 secs   av.it.:  18.4
+      thresh= 1.565E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.959E-15
+
+     Pert. #  1: Fermi energy shift (Ry) =     2.7573E-25     0.0000E+00
+
+      iter #   7 total cpu time :   188.4 secs   av.it.:  18.4
+      thresh= 4.426E-09 alpha_mix =  0.700 |ddv_scf|^2 =  2.918E-19
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+
+     Representation #   4 modes #   5   6
+
+     Self-consistent Calculation
+
+     Pert. #  1: Fermi energy shift (Ry) =     2.7573E-25     1.2539E-37
+     Pert. #  2: Fermi energy shift (Ry) =     2.7573E-25     1.2539E-37
+
+      iter #   1 total cpu time :   197.3 secs   av.it.:  12.4
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.936E-06
+
+     Pert. #  1: Fermi energy shift (Ry) =     2.7573E-25    -5.8775E-39
+     Pert. #  2: Fermi energy shift (Ry) =    -1.0340E-25    -1.9592E-39
+
+      iter #   2 total cpu time :   210.1 secs   av.it.:  20.8
+      thresh= 1.391E-04 alpha_mix =  0.700 |ddv_scf|^2 =  1.560E-07
+
+     Pert. #  1: Fermi energy shift (Ry) =     6.3762E-25     0.0000E+00
+     Pert. #  2: Fermi energy shift (Ry) =     4.3082E-26    -9.7958E-40
+
+      iter #   3 total cpu time :   223.0 secs   av.it.:  21.0
+      thresh= 3.949E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.342E-09
+
+     Pert. #  1: Fermi energy shift (Ry) =     2.1110E-25     6.1224E-41
+     Pert. #  2: Fermi energy shift (Ry) =     4.3082E-26     4.5918E-41
+
+      iter #   4 total cpu time :   235.1 secs   av.it.:  19.8
+      thresh= 3.663E-06 alpha_mix =  0.700 |ddv_scf|^2 =  9.936E-12
+
+     Pert. #  1: Fermi energy shift (Ry) =     3.2312E-25     3.8265E-42
+     Pert. #  2: Fermi energy shift (Ry) =    -3.6620E-26     3.8265E-42
+
+      iter #   5 total cpu time :   247.6 secs   av.it.:  20.2
+      thresh= 3.152E-07 alpha_mix =  0.700 |ddv_scf|^2 =  5.109E-14
+
+     Pert. #  1: Fermi energy shift (Ry) =     4.6529E-25     1.1479E-41
+     Pert. #  2: Fermi energy shift (Ry) =     0.0000E+00     1.9132E-42
+
+      iter #   6 total cpu time :   260.8 secs   av.it.:  21.9
+      thresh= 2.260E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.511E-15
+
+     Pert. #  1: Fermi energy shift (Ry) =     1.9387E-25     1.1479E-41
+     Pert. #  2: Fermi energy shift (Ry) =     6.4623E-26     3.8265E-42
+
+      iter #   7 total cpu time :   273.9 secs   av.it.:  21.4
+      thresh= 3.887E-09 alpha_mix =  0.700 |ddv_scf|^2 =  6.900E-17
+
+     End of self-consistent calculation
+
+     Convergence has been achieved 
+
+     Number of q in the star =    1
+     List of q in the star:
+          1   0.000000000   0.000000000   0.000000000
+
+     Diagonalizing the dynamical matrix
+
+     q = (    0.000000000   0.000000000   0.000000000 ) 
+
+ **************************************************************************
+     freq (    1) =      -0.267811 [THz] =      -8.933205 [cm-1]
+     freq (    2) =      -0.263598 [THz] =      -8.792685 [cm-1]
+     freq (    3) =      -0.263598 [THz] =      -8.792685 [cm-1]
+     freq (    4) =       4.203528 [THz] =     140.214599 [cm-1]
+     freq (    5) =       4.203528 [THz] =     140.214599 [cm-1]
+     freq (    6) =       7.322784 [THz] =     244.261777 [cm-1]
+ **************************************************************************
+
+     Using the point group D_6h(6/mmm) to classify the modes
+     there are 12 classes
+     the character table:
+
+       E     2C6   2C3   C2    3C2'  3C2'' i     2S3   2S6   s_h   3s_d  3s_v 
+A_1g   1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00  1.00
+A_2g   1.00  1.00  1.00  1.00 -1.00 -1.00  1.00  1.00  1.00  1.00 -1.00 -1.00
+B_1g   1.00 -1.00  1.00 -1.00  1.00 -1.00  1.00 -1.00  1.00 -1.00  1.00 -1.00
+B_2g   1.00 -1.00  1.00 -1.00 -1.00  1.00  1.00 -1.00  1.00 -1.00 -1.00  1.00
+E_1g   2.00  1.00 -1.00 -2.00  0.00  0.00  2.00  1.00 -1.00 -2.00  0.00  0.00
+E_2g   2.00 -1.00 -1.00  2.00  0.00  0.00  2.00 -1.00 -1.00  2.00  0.00  0.00
+A_1u   1.00  1.00  1.00  1.00  1.00  1.00 -1.00 -1.00 -1.00 -1.00 -1.00 -1.00
+A_2u   1.00  1.00  1.00  1.00 -1.00 -1.00 -1.00 -1.00 -1.00 -1.00  1.00  1.00
+B_1u   1.00 -1.00  1.00 -1.00  1.00 -1.00 -1.00  1.00 -1.00  1.00 -1.00  1.00
+B_2u   1.00 -1.00  1.00 -1.00 -1.00  1.00 -1.00  1.00 -1.00  1.00  1.00 -1.00
+E_1u   2.00  1.00 -1.00 -2.00  0.00  0.00 -2.00 -1.00  1.00  2.00  0.00  0.00
+E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
+
+     the symmetry operations in each class and the name of the first element:
+
+     E        1
+          identity                                               
+     2C6      5    6
+           60 deg rotation - cryst. axis [0,0,1]                 
+     2C3      7    8
+          120 deg rotation - cryst. axis [0,0,1]                 
+     C2       2
+          180 deg rotation - cart. axis [0,0,1]                  
+     3C2'     4   12   11
+          180 deg rotation - cart. axis [1,0,0]                  
+     3C2''    3    9   10
+          180 deg rotation - cart. axis [0,1,0]                  
+     i       13
+          inversion                                              
+     2S3     17   18
+          inv.  60 deg rotation - cryst. axis [0,0,1]            
+     2S6     19   20
+          inv. 120 deg rotation - cryst. axis [0,0,1]            
+     s_h     14
+          inv. 180 deg rotation - cart. axis [0,0,1]             
+     3s_d    16   24   23
+          inv. 180 deg rotation - cart. axis [1,0,0]             
+     3s_v    15   21   22
+          inv. 180 deg rotation - cart. axis [0,1,0]             
+
+     Mode symmetry, D_6h(6/mmm) point group:
+
+     freq (   1-   1) =         -8.9  [cm-1]   --> A_2u            I  
+     freq (   2-   3) =         -8.8  [cm-1]   --> E_1u            I  
+     freq (   4-   5) =        140.2  [cm-1]   --> E_2g            R  
+     freq (   6-   6) =        244.3  [cm-1]   --> B_1g               
+
+     THERMO_PW    :   4m50.51s CPU   4m58.06s WALL
+
+
+   This run was terminated on:  22:54:38  23Jan2024            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

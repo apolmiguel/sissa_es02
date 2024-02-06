@@ -1,0 +1,11 @@
+phonons at Gamma
+ &inputph
+	prefix='sc',
+	ldisp=.false.
+	fildyn='sc.dyn.xml',
+	nq1=4,
+	nq2=4,
+	nq3=2,
+	tr2_ph=1.0d-16,
+ /
+'1.25 0 0'

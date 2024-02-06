@@ -1,17 +1,22 @@
 #!/bin/bash
-#SBATCH --ntasks=16
+#SBATCH --ntasks=40
 #SBATCH --cpus-per-task=2
-#SBATCH --mem=50G
-#SBATCH --time=00:59:00
-#SBATCH -A Sis23_degironc_1
-#SBATCH -p boost_usr_prod
+#SBATCH --mem=200000MB
+#SBATCH --time=05:59:00
+#SBATCH -p regular1
 #SBATCH --output=ii_smearing.out
 #SBATCH --error=ii_smearing.err
 #SBATCH --mail-type=END
 #SBATCH --mail-user=atan@sissa.it
 
+. /home/atan/bin/module_load_gnu
 
-mkdir -p smearing
+export OMP_NUM_THREADS=1
+
+#cd /home/atan/es02_2022_project
+
+# creates folder for cutoff. comment out if initial runs have already been made
+#mkdir -p smearing
 cd smearing/
 
 # do loop for smearing parameter
@@ -74,7 +79,7 @@ EOF
 
 
 # make sure pw.x directory is correct
-mpirun -np $SLURM_NTASKS $PWX_DIR < Sc_smearing${smr}_kpt${kpt}.scf.in > Sc_smearing${smr}_kpt${kpt}.scf.out
+mpirun -np $SLURM_NTASKS /home/atan/q-e-qe-7.2/bin/pw.x < Sc_smearing${smr}_kpt${kpt}.scf.in > Sc_smearing${smr}_kpt${kpt}.scf.out
 
 #uncomment to remove the output file
 # rm -r sc_rhocut.out 
@@ -86,3 +91,5 @@ done
 cd ..
 
 done
+
+

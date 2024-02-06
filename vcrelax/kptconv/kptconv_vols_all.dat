@@ -1,0 +1,152 @@
+K_POINTS automatic
+3 3 2 0 0 0
+     unit-cell volume          =     337.5249 (a.u.)^3
+     new unit-cell volume =    326.88720 a.u.^3 (    48.43969 Ang^3 )
+     new unit-cell volume =    311.73035 a.u.^3 (    46.19367 Ang^3 )
+     new unit-cell volume =    297.49622 a.u.^3 (    44.08439 Ang^3 )
+     new unit-cell volume =    298.99956 a.u.^3 (    44.30716 Ang^3 )
+     new unit-cell volume =    299.03869 a.u.^3 (    44.31296 Ang^3 )
+     new unit-cell volume =    299.05896 a.u.^3 (    44.31597 Ang^3 )
+     new unit-cell volume =    299.07563 a.u.^3 (    44.31844 Ang^3 )
+     new unit-cell volume =    299.07563 a.u.^3 (    44.31844 Ang^3 )
+     unit-cell volume          =     299.0756 (a.u.)^3
+K_POINTS automatic
+6 6 4 0 0 0
+     unit-cell volume          =     337.5249 (a.u.)^3
+     new unit-cell volume =    327.44657 a.u.^3 (    48.52258 Ang^3 )
+     new unit-cell volume =    313.46255 a.u.^3 (    46.45036 Ang^3 )
+     new unit-cell volume =    300.19547 a.u.^3 (    44.48438 Ang^3 )
+     new unit-cell volume =    301.36641 a.u.^3 (    44.65789 Ang^3 )
+     new unit-cell volume =    302.10115 a.u.^3 (    44.76677 Ang^3 )
+     new unit-cell volume =    302.35678 a.u.^3 (    44.80465 Ang^3 )
+     new unit-cell volume =    302.13143 a.u.^3 (    44.77126 Ang^3 )
+     new unit-cell volume =    302.13143 a.u.^3 (    44.77126 Ang^3 )
+     unit-cell volume          =     302.1314 (a.u.)^3
+K_POINTS automatic
+9 9 6 0 0 0
+     unit-cell volume          =     337.5249 (a.u.)^3
+     new unit-cell volume =    327.72970 a.u.^3 (    48.56453 Ang^3 )
+     new unit-cell volume =    314.05841 a.u.^3 (    46.53866 Ang^3 )
+     new unit-cell volume =    301.24627 a.u.^3 (    44.64009 Ang^3 )
+     new unit-cell volume =    302.29936 a.u.^3 (    44.79614 Ang^3 )
+     new unit-cell volume =    302.94476 a.u.^3 (    44.89178 Ang^3 )
+     new unit-cell volume =    303.17903 a.u.^3 (    44.92650 Ang^3 )
+     new unit-cell volume =    302.99530 a.u.^3 (    44.89927 Ang^3 )
+     new unit-cell volume =    302.82959 a.u.^3 (    44.87472 Ang^3 )
+     new unit-cell volume =    302.82959 a.u.^3 (    44.87472 Ang^3 )
+     unit-cell volume          =     302.8296 (a.u.)^3
+K_POINTS automatic
+12 12 8 0 0 0
+     unit-cell volume          =     337.5249 (a.u.)^3
+     new unit-cell volume =    327.70664 a.u.^3 (    48.56111 Ang^3 )
+     new unit-cell volume =    314.00089 a.u.^3 (    46.53013 Ang^3 )
+     new unit-cell volume =    301.54758 a.u.^3 (    44.68474 Ang^3 )
+     new unit-cell volume =    302.39373 a.u.^3 (    44.81013 Ang^3 )
+     new unit-cell volume =    303.08230 a.u.^3 (    44.91216 Ang^3 )
+     new unit-cell volume =    303.26349 a.u.^3 (    44.93901 Ang^3 )
+     new unit-cell volume =    303.02810 a.u.^3 (    44.90413 Ang^3 )
+     new unit-cell volume =    303.02810 a.u.^3 (    44.90413 Ang^3 )
+     unit-cell volume          =     303.0281 (a.u.)^3
+K_POINTS automatic
+15 15 10 0 0 0
+     unit-cell volume          =     337.5249 (a.u.)^3
+     new unit-cell volume =    327.76823 a.u.^3 (    48.57024 Ang^3 )
+     new unit-cell volume =    314.13219 a.u.^3 (    46.54959 Ang^3 )
+     new unit-cell volume =    301.39610 a.u.^3 (    44.66229 Ang^3 )
+     new unit-cell volume =    302.41123 a.u.^3 (    44.81272 Ang^3 )
+     new unit-cell volume =    303.03427 a.u.^3 (    44.90505 Ang^3 )
+     new unit-cell volume =    303.26212 a.u.^3 (    44.93881 Ang^3 )
+     new unit-cell volume =    303.12513 a.u.^3 (    44.91851 Ang^3 )
+     new unit-cell volume =    302.95651 a.u.^3 (    44.89352 Ang^3 )
+     new unit-cell volume =    302.95651 a.u.^3 (    44.89352 Ang^3 )
+     unit-cell volume          =     302.9565 (a.u.)^3
+K_POINTS automatic
+18 18 12 0 0 0
+     unit-cell volume          =     337.5249 (a.u.)^3
+     new unit-cell volume =    327.77572 a.u.^3 (    48.57135 Ang^3 )
+     new unit-cell volume =    314.17086 a.u.^3 (    46.55532 Ang^3 )
+     new unit-cell volume =    301.28126 a.u.^3 (    44.64528 Ang^3 )
+     new unit-cell volume =    302.40825 a.u.^3 (    44.81228 Ang^3 )
+     new unit-cell volume =    303.11918 a.u.^3 (    44.91763 Ang^3 )
+     new unit-cell volume =    303.35323 a.u.^3 (    44.95231 Ang^3 )
+     new unit-cell volume =    303.14123 a.u.^3 (    44.92090 Ang^3 )
+     new unit-cell volume =    302.95313 a.u.^3 (    44.89302 Ang^3 )
+     new unit-cell volume =    302.95313 a.u.^3 (    44.89302 Ang^3 )
+     unit-cell volume          =     302.9531 (a.u.)^3
+K_POINTS automatic
+21 21 14 0 0 0
+     unit-cell volume          =     337.5249 (a.u.)^3
+     new unit-cell volume =    327.71795 a.u.^3 (    48.56279 Ang^3 )
+     new unit-cell volume =    314.03447 a.u.^3 (    46.53511 Ang^3 )
+     new unit-cell volume =    301.40295 a.u.^3 (    44.66331 Ang^3 )
+     new unit-cell volume =    302.41154 a.u.^3 (    44.81277 Ang^3 )
+     new unit-cell volume =    303.02411 a.u.^3 (    44.90354 Ang^3 )
+     new unit-cell volume =    303.27052 a.u.^3 (    44.94005 Ang^3 )
+     new unit-cell volume =    303.09491 a.u.^3 (    44.91403 Ang^3 )
+     new unit-cell volume =    302.94225 a.u.^3 (    44.89141 Ang^3 )
+     new unit-cell volume =    302.94225 a.u.^3 (    44.89141 Ang^3 )
+     unit-cell volume          =     302.9422 (a.u.)^3
+K_POINTS automatic
+24 24 16 0 0 0
+     unit-cell volume          =     337.5249 (a.u.)^3
+     new unit-cell volume =    327.74038 a.u.^3 (    48.56611 Ang^3 )
+     new unit-cell volume =    314.10573 a.u.^3 (    46.54567 Ang^3 )
+     new unit-cell volume =    301.21101 a.u.^3 (    44.63487 Ang^3 )
+     new unit-cell volume =    302.42179 a.u.^3 (    44.81429 Ang^3 )
+     new unit-cell volume =    303.17658 a.u.^3 (    44.92613 Ang^3 )
+     new unit-cell volume =    303.43184 a.u.^3 (    44.96396 Ang^3 )
+     new unit-cell volume =    303.14307 a.u.^3 (    44.92117 Ang^3 )
+     new unit-cell volume =    302.95900 a.u.^3 (    44.89389 Ang^3 )
+     new unit-cell volume =    302.95900 a.u.^3 (    44.89389 Ang^3 )
+     unit-cell volume          =     302.9590 (a.u.)^3
+K_POINTS automatic
+27 27 18 0 0 0
+     unit-cell volume          =     337.5249 (a.u.)^3
+     new unit-cell volume =    327.74763 a.u.^3 (    48.56719 Ang^3 )
+     new unit-cell volume =    314.10729 a.u.^3 (    46.54590 Ang^3 )
+     new unit-cell volume =    301.30430 a.u.^3 (    44.64869 Ang^3 )
+     new unit-cell volume =    302.43096 a.u.^3 (    44.81564 Ang^3 )
+     new unit-cell volume =    303.11907 a.u.^3 (    44.91761 Ang^3 )
+     new unit-cell volume =    303.34922 a.u.^3 (    44.95172 Ang^3 )
+     new unit-cell volume =    303.14726 a.u.^3 (    44.92179 Ang^3 )
+     new unit-cell volume =    302.94852 a.u.^3 (    44.89234 Ang^3 )
+     new unit-cell volume =    302.94852 a.u.^3 (    44.89234 Ang^3 )
+     unit-cell volume          =     302.9485 (a.u.)^3
+K_POINTS automatic
+30 30 20 0 0 0
+     unit-cell volume          =     337.5249 (a.u.)^3
+     new unit-cell volume =    327.77684 a.u.^3 (    48.57152 Ang^3 )
+     new unit-cell volume =    314.15028 a.u.^3 (    46.55227 Ang^3 )
+     new unit-cell volume =    301.45250 a.u.^3 (    44.67065 Ang^3 )
+     new unit-cell volume =    302.41109 a.u.^3 (    44.81270 Ang^3 )
+     new unit-cell volume =    302.98075 a.u.^3 (    44.89711 Ang^3 )
+     new unit-cell volume =    303.22180 a.u.^3 (    44.93284 Ang^3 )
+     new unit-cell volume =    303.08749 a.u.^3 (    44.91293 Ang^3 )
+     new unit-cell volume =    303.08749 a.u.^3 (    44.91293 Ang^3 )
+     unit-cell volume          =     303.0875 (a.u.)^3
+K_POINTS automatic
+33 33 22 0 0 0
+     unit-cell volume          =     337.5249 (a.u.)^3
+     new unit-cell volume =    327.74553 a.u.^3 (    48.56688 Ang^3 )
+     new unit-cell volume =    314.10909 a.u.^3 (    46.54616 Ang^3 )
+     new unit-cell volume =    301.23668 a.u.^3 (    44.63867 Ang^3 )
+     new unit-cell volume =    302.41896 a.u.^3 (    44.81387 Ang^3 )
+     new unit-cell volume =    303.14645 a.u.^3 (    44.92167 Ang^3 )
+     new unit-cell volume =    303.39583 a.u.^3 (    44.95862 Ang^3 )
+     new unit-cell volume =    303.14505 a.u.^3 (    44.92146 Ang^3 )
+     new unit-cell volume =    302.94762 a.u.^3 (    44.89221 Ang^3 )
+     new unit-cell volume =    302.94762 a.u.^3 (    44.89221 Ang^3 )
+     unit-cell volume          =     302.9476 (a.u.)^3
+K_POINTS automatic
+36 36 24 0 0 0
+     unit-cell volume          =     337.5249 (a.u.)^3
+     new unit-cell volume =    327.74219 a.u.^3 (    48.56638 Ang^3 )
+     new unit-cell volume =    314.08380 a.u.^3 (    46.54242 Ang^3 )
+     new unit-cell volume =    301.37344 a.u.^3 (    44.65894 Ang^3 )
+     new unit-cell volume =    302.40271 a.u.^3 (    44.81146 Ang^3 )
+     new unit-cell volume =    303.03766 a.u.^3 (    44.90555 Ang^3 )
+     new unit-cell volume =    303.27237 a.u.^3 (    44.94033 Ang^3 )
+     new unit-cell volume =    303.10174 a.u.^3 (    44.91504 Ang^3 )
+     new unit-cell volume =    302.93902 a.u.^3 (    44.89093 Ang^3 )
+     new unit-cell volume =    302.93902 a.u.^3 (    44.89093 Ang^3 )
+     unit-cell volume          =     302.9390 (a.u.)^3

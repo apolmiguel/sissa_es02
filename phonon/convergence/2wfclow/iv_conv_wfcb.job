@@ -1,0 +1,15 @@
+#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=20
+#SBATCH --cpus-per-task=2
+#SBATCH --mem=200000MB
+#SBATCH --time=01:59:00
+#SBATCH -p regular1
+#SBATCH --output=iv_conv_wfcb.out
+#SBATCH --error=iv_conv_wfcb.err
+#SBATCH --mail-type=END
+#SBATCH --mail-user=atan@sissa.it
+
+./get_conv_wfclow
+
+

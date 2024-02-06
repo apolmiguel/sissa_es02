@@ -1,0 +1,15 @@
+#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=20
+#SBATCH --cpus-per-task=2
+#SBATCH --mem=200000MB
+#SBATCH --time=11:59:00
+#SBATCH -p regular1
+#SBATCH --output=iv_conv_kpt.out
+#SBATCH --error=iv_conv_kpt.err
+#SBATCH --mail-type=END
+#SBATCH --mail-user=atan@sissa.it
+
+./get_conv_kpt
+
+

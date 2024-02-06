@@ -1,0 +1,17 @@
+/home/atan/q-e-qe-7.2/bin
+creating thermo_pw file
+creating input file sc.wfclow40.scf.in
+creating ph_control file
+ running the phonon calculation for wfclow=40, ecutrho=320
+creating thermo_pw file
+creating input file sc.wfclow50.scf.in
+creating ph_control file
+ running the phonon calculation for wfclow=50, ecutrho=320
+creating thermo_pw file
+creating input file sc.wfclow60.scf.in
+creating ph_control file
+ running the phonon calculation for wfclow=60, ecutrho=320
+creating thermo_pw file
+creating input file sc.wfclow70.scf.in
+creating ph_control file
+ running the phonon calculation for wfclow=70, ecutrho=320
