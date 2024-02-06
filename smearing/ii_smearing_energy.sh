@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #printf "smearing\tkptmult\tenergy\n" >> energies_smearing.dat
+rm energies_smearing.dat
 
 kptmult=($(seq 2 1 12))
 
