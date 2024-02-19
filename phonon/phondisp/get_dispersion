@@ -1,0 +1,92 @@
+#!/bin/sh
+
+# set environment variables for THERMO_PW
+. ../environment_tpw.job
+
+# name variables and echo command
+NAME="sc"
+ECHO="echo"
+
+echo $PWDIR
+THERMO_PW_COMMAND="$PREFIX $PWDIR/thermo_pw.x $SUFFIX"
+
+# required executables and pseudopotentials
+BIN_LIST="thermo_pw.x"
+PSEUDO_LIST="Sc.pz-spn-kjpaw_psl.1.0.0.UPF"
+
+
+mkdir -p tmp/
+mkdir -p results/
+cd results/
+
+echo 'creating thermo_pw file'
+cat > thermo_control << EOF
+ &INPUT_THERMO
+  what='scf_disp'
+  nq1_d=128, nq2_d=128, nq3_d=128
+ /
+EOF
+
+echo 'creating input file '$NAME'.phondisp.scf.in'
+cat > $NAME.phondisp.scf.in << EOF
+ &control
+	calculation='scf'
+	prefix='$NAME',
+	pseudo_dir = '$PSEUDODIR',
+	outdir='$OUTDIR'
+ /
+ &system
+	ibrav=4
+	celldm(1)=6.09368707
+	celldm(3)=1.54636503
+	nat=2
+	ntyp=1
+	ecutwfc=70
+	ecutrho=320
+	occupations='smearing'
+	smearing='mv'
+	degauss=0.02
+ /
+ &electrons
+	mixing_mode='plain'
+	mixing_beta=0.7
+	diagonalization='david'
+	conv_thr=1.0d-10
+ /
+
+ATOMIC_SPECIES
+ Sc 44.596 $PSEUDO_LIST 
+
+ATOMIC_POSITIONS crystal
+ Sc 0.00 0.00 0.00
+ Sc 0.666666666667 0.333333333333 0.5
+
+K_POINTS automatic
+12 12 8 1 1 1
+EOF
+
+echo 'creating ph_control file'
+cat > ph_control << EOF
+ &inputph
+	prefix='$NAME',
+	fildyn='sc.dyn.xml',
+	#qplot=.TRUE.,
+	ldisp=.TRUE., # calculates phonons for a grid specified by nqi
+	nq1=4,
+	nq2=4,
+	nq3=2,
+	tr2_ph=1.0d-16,
+	q_in_band_form=.TRUE. # interpolates points between specified k-points
+ /
+ 5 # number of points in the band
+ 0.00 0.00 0.00 5 ## gamma, 5 points
+ 1.25 0.00 0.00 5 ## K
+ 1.00 0.577360 0.00 5 ## M
+ 0.00 0.00 0.6466778416 5 ## A
+ 0.00 0.00 0.00 1 ## gamma , 1 point (repeat gamma to close the band)
+EOF
+
+$THERMO_PW_COMMAND < $NAME.phondisp.scf.in > $NAME.phondisp.scf.out
+
+cd ..
+#rm -r tmp

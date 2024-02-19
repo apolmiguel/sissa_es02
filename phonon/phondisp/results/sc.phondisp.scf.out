@@ -1,5 +1,5 @@
 
-     Program THERMO_PW v.7.2 starts on 19Feb2024 at 13:19:28 
+     Program THERMO_PW v.7.2 starts on 19Feb2024 at 13:26: 3 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -15,7 +15,7 @@
      MPI processes distributed on     1 nodes
      K-points division:     npool     =       4
      R & G space division:  proc/nbgrp/npool/nimage =       5
-     315536 MiB available memory on the printing compute node when the environment starts
+     315106 MiB available memory on the printing compute node when the environment starts
 
      Reading input from _temporary_1
      file Sc.pz-spn-kjpaw_psl.1.0.0.UPF: wavefunction(s)  3S 3P 3D renormalized
@@ -23,7 +23,9 @@
    Info: using nr1, nr2, nr3 values from input
 
 
-     Doing a phonon calculation
+     Doing a phonon dispersion calculation
+     Use what='plot_bz' to visualize the BZ path
+     Computing the harmonic thermodynamic properties
 
      FFT mesh: (   36,   36,   54 )
 
@@ -576,7 +578,7 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
      Starting wfcs are   20 randomized atomic wfcs
      Checking if some PAW data can be deallocated... 
 
-     total cpu time spent up to now is        1.2 secs
+     total cpu time spent up to now is        1.4 secs
 
      Self-consistent Calculation
 
@@ -607,7 +609,7 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
      c_bands:  1 eigenvalues not converged
      ethr =  1.40E-05,  avg # of iterations = 17.6
 
-     total cpu time spent up to now is       10.4 secs
+     total cpu time spent up to now is       10.6 secs
 
      total energy              =    -306.87467436 Ry
      estimated scf accuracy    <       0.01667821 Ry
@@ -616,7 +618,7 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
      Davidson diagonalization with overlap
      ethr =  7.58E-05,  avg # of iterations =  4.3
 
-     total cpu time spent up to now is       12.4 secs
+     total cpu time spent up to now is       12.6 secs
 
      total energy              =    -306.87853387 Ry
      estimated scf accuracy    <       0.00098769 Ry
@@ -629,7 +631,7 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
      c_bands:  1 eigenvalues not converged
      ethr =  4.49E-06,  avg # of iterations =  9.4
 
-     total cpu time spent up to now is       15.6 secs
+     total cpu time spent up to now is       15.8 secs
 
      total energy              =    -306.87937265 Ry
      estimated scf accuracy    <       0.00028118 Ry
@@ -639,7 +641,7 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
      c_bands:  1 eigenvalues not converged
      ethr =  1.28E-06,  avg # of iterations =  6.9
 
-     total cpu time spent up to now is       18.2 secs
+     total cpu time spent up to now is       18.4 secs
 
      total energy              =    -306.87951120 Ry
      estimated scf accuracy    <       0.00012522 Ry
@@ -648,7 +650,7 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
      Davidson diagonalization with overlap
      ethr =  5.69E-07,  avg # of iterations =  5.6
 
-     total cpu time spent up to now is       20.4 secs
+     total cpu time spent up to now is       20.7 secs
 
      total energy              =    -306.87956441 Ry
      estimated scf accuracy    <       0.00000571 Ry
@@ -657,7 +659,7 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
      Davidson diagonalization with overlap
      ethr =  2.59E-08,  avg # of iterations = 11.9
 
-     total cpu time spent up to now is       24.1 secs
+     total cpu time spent up to now is       24.3 secs
 
      total energy              =    -306.87956968 Ry
      estimated scf accuracy    <       0.00001016 Ry
@@ -666,7 +668,7 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
      Davidson diagonalization with overlap
      ethr =  2.59E-08,  avg # of iterations =  6.5
 
-     total cpu time spent up to now is       26.5 secs
+     total cpu time spent up to now is       26.8 secs
 
      total energy              =    -306.87957306 Ry
      estimated scf accuracy    <       0.00000124 Ry
@@ -675,7 +677,7 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
      Davidson diagonalization with overlap
      ethr =  5.63E-09,  avg # of iterations =  5.8
 
-     total cpu time spent up to now is       28.8 secs
+     total cpu time spent up to now is       29.2 secs
 
      total energy              =    -306.87957362 Ry
      estimated scf accuracy    <       0.00000011 Ry
@@ -684,7 +686,7 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
      Davidson diagonalization with overlap
      ethr =  5.08E-10,  avg # of iterations = 10.4
 
-     total cpu time spent up to now is       32.1 secs
+     total cpu time spent up to now is       32.6 secs
 
      total energy              =    -306.87957378 Ry
      estimated scf accuracy    <       0.00000001 Ry
@@ -693,7 +695,7 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
      Davidson diagonalization with overlap
      ethr =  5.50E-11,  avg # of iterations =  9.2
 
-     total cpu time spent up to now is       35.1 secs
+     total cpu time spent up to now is       35.6 secs
 
      total energy              =    -306.87957379 Ry
      estimated scf accuracy    <          7.7E-09 Ry
@@ -702,7 +704,7 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
      Davidson diagonalization with overlap
      ethr =  3.50E-11,  avg # of iterations =  4.7
 
-     total cpu time spent up to now is       37.1 secs
+     total cpu time spent up to now is       37.6 secs
 
      total energy              =    -306.87957379 Ry
      estimated scf accuracy    <          1.2E-10 Ry
@@ -720,7 +722,7 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
      c_bands:  2 eigenvalues not converged
      ethr =  5.27E-13,  avg # of iterations = 17.8
 
-     total cpu time spent up to now is       43.4 secs
+     total cpu time spent up to now is       43.9 secs
 
      total energy              =    -306.87957379 Ry
      estimated scf accuracy    <          1.3E-10 Ry
@@ -729,7 +731,7 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
      Davidson diagonalization with overlap
      ethr =  5.27E-13,  avg # of iterations =  1.3
 
-     total cpu time spent up to now is       44.8 secs
+     total cpu time spent up to now is       45.3 secs
 
      total energy              =    -306.87957379 Ry
      estimated scf accuracy    <          1.0E-10 Ry
@@ -738,7 +740,7 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
      Davidson diagonalization with overlap
      ethr =  4.77E-13,  avg # of iterations =  5.2
 
-     total cpu time spent up to now is       46.9 secs
+     total cpu time spent up to now is       47.3 secs
 
      End of self-consistent calculation
 
@@ -769,604 +771,4 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
 
      Waiting for input...
      Reading input from standard input
-
-     Reading xml data from directory:
-
-     ../tmp//g1/sc.save/
-     file Sc.pz-spn-kjpaw_psl.1.0.0.UPF: wavefunction(s)  3S 3P 3D renormalized
-
-     IMPORTANT: XC functional enforced from input :
-     Exchange-correlation= PZ
-                           (   1   1   0   0   0   0   0)
-     Any further DFT definition will be discarded
-     Please, verify this is what you really want
-
-
-     Parallelization info
-     --------------------
-     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
-     Min         164     144     44                 5857     4796     826
-     Max         165     145     45                 5859     4801     829
-     Sum         823     721    223                29291    23991    4139
-
-     Using Slab Decomposition
-
-
-     Check: negative core charge=   -0.000016
-     Reading collected, re-writing distributed wavefunctions
-
-  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-     Doing work    1 /     1
-     Doing the work of image    1 of geometry    1
-      q point number     1, representations:
-       0 1 2 3 4 5 6
-  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-
-                          --------------------------
-     Calculation of q =    1.2500000   0.0000000   0.0000000
-                          --------------------------
-
-
-     Parallelization info
-     --------------------
-     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
-     Min         164     144     58                 5857     4796    1221
-     Max         165     145     60                 5859     4801    1224
-     Sum         823     721    295                29291    23991    6109
-
-     Using Slab Decomposition
-
-
-     Title: 
-     phonons at Gamma                                                           
-
-
-     bravais-lattice index     =            4
-     lattice parameter (alat)  =       6.0937  a.u.
-     unit-cell volume          =     303.0282 (a.u.)^3
-     number of atoms/cell      =            2
-     number of atomic types    =            1
-     number of electrons       =        22.00
-     number of Kohn-Sham states=           15
-     kinetic-energy cutoff     =      70.0000  Ry
-     charge density cutoff     =     320.0000  Ry
-     Exchange-correlation= PZ
-                           (   1   1   0   0   0   0   0)
-
-     celldm(1)=   6.093687  celldm(2)=   0.000000  celldm(3)=   1.546365
-     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
-
-     crystal axes: (cart. coord. in units of alat)
-               a(1) = (   1.000000   0.000000   0.000000 )  
-               a(2) = (  -0.500000   0.866025   0.000000 )  
-               a(3) = (   0.000000   0.000000   1.546365 )  
-
-     reciprocal axes: (cart. coord. in units 2 pi/alat)
-               b(1) = (  1.000000  0.577350 -0.000000 )  
-               b(2) = (  0.000000  1.154701  0.000000 )  
-               b(3) = (  0.000000 -0.000000  0.646678 )  
-
-
-     PseudoPot. # 1 for Sc read from file:
-     /home/atan/sissa_es02/Sc.pz-spn-kjpaw_psl.1.0.0.UPF
-     MD5 check sum: 1f9095df0bb42a6568b4e9f256ff075f
-     Pseudo is Projector augmented-wave + core cor, Zval = 11.0
-     Generated using 'atomic' code by A. Dal Corso  v.7.1
-     Shape of augmentation charge: PSQ
-     Using radial grid of 1173 points,  6 beta functions with: 
-                l(1) =   0
-                l(2) =   0
-                l(3) =   1
-                l(4) =   1
-                l(5) =   2
-                l(6) =   2
-     Q(r) pseudized with 0 coefficients 
-
-
-     atomic species   valence    mass     pseudopotential
-        Sc            11.00    44.59600     Sc( 1.00)
-
-     24 Sym. Ops., with inversion, found (12 have fractional translation)
-
-
-
-   Cartesian axes
-
-     site n.     atom                  positions (alat units)
-         1           Sc  tau(   1) = (   0.0000000   0.0000000   0.0000000  )
-         2           Sc  tau(   2) = (   0.5000000   0.2886751   0.7731825  )
-
-     number of k points=  1776  Marzari-Vanderbilt smearing, width (Ry)=  0.0200
-
-     Number of k-points >= 100: set verbosity='high' to print them.
-
-     Dense  grid:    29291 G-vectors     FFT dimensions: (  36,  36,  54)
-
-     Smooth grid:    23991 G-vectors     FFT dimensions: (  36,  36,  54)
-
-     Estimated max dynamical RAM per process >       8.06 MB
-
-     Estimated total dynamical RAM >     161.19 MB
-
-     Check: negative core charge=   -0.000016
-
-     The potential is recalculated from file :
-     ../tmp//g1/_ph0/sc.save/charge-density
-
-     Starting wfcs are   20 atomic wfcs
-     Checking if some PAW data can be deallocated... 
-
-     Band Structure Calculation
-     Davidson diagonalization with overlap
-
-     ethr =  4.55E-11,  avg # of iterations = 37.3
-
-     Total points 1776
-     Diagonalized points 1776   Symmetrized points    0
-
-     total cpu time spent up to now is      213.4 secs
-
-     End of band structure calculation
-
-     Number of k-points >= 100: set verbosity='high' to print the bands.
-
-     the Fermi energy is    10.0664 ev
-     (compare with:    10.0664 eV, computed in scf)
-
-     Writing config to output data dir ../tmp//g1/_ph0/sc.save/
-
-     phonons at Gamma                                                           
-
-     bravais-lattice index     =            4
-     lattice parameter (alat)  =       6.0937  a.u.
-     unit-cell volume          =     303.0282 (a.u.)^3
-     number of atoms/cell      =            2
-     number of atomic types    =            1
-     kinetic-energy cut-off    =      70.0000  Ry
-     charge density cut-off    =     320.0000  Ry
-     convergence threshold     =      1.0E-16
-     beta                      =       0.7000
-     number of iterations used =            4
-     Exchange-correlation= PZ
-                           (   1   1   0   0   0   0   0)
-
-
-     celldm(1)=    6.09369  celldm(2)=    0.00000  celldm(3)=    1.54637
-     celldm(4)=    0.00000  celldm(5)=    0.00000  celldm(6)=    0.00000
-
-     crystal axes: (cart. coord. in units of alat)
-               a(1) = (  1.0000  0.0000  0.0000 )  
-               a(2) = ( -0.5000  0.8660  0.0000 )  
-               a(3) = (  0.0000  0.0000  1.5464 )  
-
-     reciprocal axes: (cart. coord. in units 2 pi/alat)
-               b(1) = (  1.0000  0.5774 -0.0000 )  
-               b(2) = (  0.0000  1.1547  0.0000 )  
-               b(3) = (  0.0000 -0.0000  0.6467 )  
-
-
-     Atoms inside the unit cell: 
-
-     Cartesian axes
-
-     site n.  atom      mass           positions (alat units)
-        1     Sc  44.5960   tau(    1) = (    0.00000    0.00000    0.00000  )
-        2     Sc  44.5960   tau(    2) = (    0.50000    0.28868    0.77318  )
-
-     Computing dynamical matrix for 
-                    q = (   1.2500000   0.0000000   0.0000000 )
-
-      4 Sym.Ops. (no q -> -q+G )
-
-
-     G cutoff =  300.9889  (   5858 G-vectors)     FFT grid: ( 36, 36, 54)
-     G cutoff =  263.3653  (   4798 G-vectors)  smooth grid: ( 36, 36, 54)
-
-     number of k points=  1776  Marzari-Vanderbilt smearing, width (Ry)=  0.0200
-
-     PseudoPot. # 1 for Sc read from file:
-     /home/atan/sissa_es02/Sc.pz-spn-kjpaw_psl.1.0.0.UPF
-     MD5 check sum: 1f9095df0bb42a6568b4e9f256ff075f
-     Pseudo is Projector augmented-wave + core cor, Zval = 11.0
-     Generated using 'atomic' code by A. Dal Corso  v.7.1
-     Shape of augmentation charge: PSQ
-     Using radial grid of 1173 points,  6 beta functions with: 
-                l(1) =   0
-                l(2) =   0
-                l(3) =   1
-                l(4) =   1
-                l(5) =   2
-                l(6) =   2
-     Q(r) pseudized with 0 coefficients 
-
-
-     Mode symmetry, C_2v (mm2)  point group:
-
-
-     Atomic displacements:
-     There are   6 irreducible representations
-
-     Representation     1      1 modes -  To be done
-
-     Representation     2      1 modes -  To be done
-
-     Representation     3      1 modes -  To be done
-
-     Representation     4      1 modes -  To be done
-
-     Representation     5      1 modes -  To be done
-
-     Representation     6      1 modes -  To be done
-
-
-
-     Alpha used in Ewald sum =   2.8000
-     PHONON       :    176.53s CPU    180.03s WALL (       1 calls)
-
-
-     Representation #   1 mode #   1
-
-     Self-consistent Calculation
-
-      iter #   1 total cpu time :   221.7 secs   av.it.:  15.3
-      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  2.100E-04
-
-      iter #   2 total cpu time :   279.3 secs   av.it.:  22.3
-      thresh= 1.449E-03 alpha_mix =  0.700 |ddv_scf|^2 =  2.034E-03
-
-      iter #   3 total cpu time :   327.8 secs   av.it.:  18.5
-      thresh= 4.510E-03 alpha_mix =  0.700 |ddv_scf|^2 =  1.273E-04
-
-      iter #   4 total cpu time :   377.1 secs   av.it.:  18.9
-      thresh= 1.128E-03 alpha_mix =  0.700 |ddv_scf|^2 =  1.855E-07
-
-      iter #   5 total cpu time :   432.0 secs   av.it.:  21.3
-      thresh= 4.307E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.895E-08
-
-      iter #   6 total cpu time :   485.3 secs   av.it.:  20.6
-      thresh= 1.377E-05 alpha_mix =  0.700 |ddv_scf|^2 =  5.023E-10
-
-      iter #   7 total cpu time :   541.1 secs   av.it.:  21.8
-      thresh= 2.241E-06 alpha_mix =  0.700 |ddv_scf|^2 =  2.658E-11
-
-      iter #   8 total cpu time :   598.5 secs   av.it.:  22.4
-      thresh= 5.155E-07 alpha_mix =  0.700 |ddv_scf|^2 =  3.478E-11
-
-      iter #   9 total cpu time :   651.4 secs   av.it.:  20.3
-      thresh= 5.898E-07 alpha_mix =  0.700 |ddv_scf|^2 =  3.149E-11
-
-      iter #  10 total cpu time :   703.1 secs   av.it.:  19.9
-      thresh= 5.611E-07 alpha_mix =  0.700 |ddv_scf|^2 =  2.988E-11
-
-      iter #  11 total cpu time :   750.6 secs   av.it.:  18.2
-      thresh= 5.466E-07 alpha_mix =  0.700 |ddv_scf|^2 =  3.834E-14
-
-      iter #  12 total cpu time :   808.8 secs   av.it.:  22.8
-      thresh= 1.958E-08 alpha_mix =  0.700 |ddv_scf|^2 =  3.587E-14
-
-      iter #  13 total cpu time :   860.6 secs   av.it.:  20.1
-      thresh= 1.894E-08 alpha_mix =  0.700 |ddv_scf|^2 =  7.852E-16
-
-      iter #  14 total cpu time :   917.6 secs   av.it.:  22.3
-      thresh= 2.802E-09 alpha_mix =  0.700 |ddv_scf|^2 =  1.132E-16
-
-      iter #  15 total cpu time :   972.1 secs   av.it.:  21.2
-      thresh= 1.064E-09 alpha_mix =  0.700 |ddv_scf|^2 =  4.392E-17
-
-     End of self-consistent calculation
-
-     Convergence has been achieved 
-
-
-     Representation #   2 mode #   2
-
-     Self-consistent Calculation
-
-      iter #   1 total cpu time :  1013.0 secs   av.it.:  14.8
-      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  6.993E-05
-
-      iter #   2 total cpu time :  1069.0 secs   av.it.:  21.9
-      thresh= 8.362E-04 alpha_mix =  0.700 |ddv_scf|^2 =  1.589E-04
-
-      iter #   3 total cpu time :  1120.8 secs   av.it.:  20.0
-      thresh= 1.261E-03 alpha_mix =  0.700 |ddv_scf|^2 =  9.434E-05
-
-      iter #   4 total cpu time :  1168.4 secs   av.it.:  18.2
-      thresh= 9.713E-04 alpha_mix =  0.700 |ddv_scf|^2 =  2.459E-07
-
-      iter #   5 total cpu time :  1222.8 secs   av.it.:  21.2
-      thresh= 4.959E-05 alpha_mix =  0.700 |ddv_scf|^2 =  3.343E-08
-
-      iter #   6 total cpu time :  1275.7 secs   av.it.:  20.5
-      thresh= 1.828E-05 alpha_mix =  0.700 |ddv_scf|^2 =  4.019E-10
-
-      iter #   7 total cpu time :  1330.5 secs   av.it.:  21.5
-      thresh= 2.005E-06 alpha_mix =  0.700 |ddv_scf|^2 =  3.564E-11
-
-      iter #   8 total cpu time :  1389.7 secs   av.it.:  23.3
-      thresh= 5.970E-07 alpha_mix =  0.700 |ddv_scf|^2 =  3.986E-10
-
-      iter #   9 total cpu time :  1437.8 secs   av.it.:  18.4
-      thresh= 1.996E-06 alpha_mix =  0.700 |ddv_scf|^2 =  5.337E-11
-
-      iter #  10 total cpu time :  1488.6 secs   av.it.:  19.6
-      thresh= 7.306E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.691E-11
-
-      iter #  11 total cpu time :  1539.6 secs   av.it.:  19.6
-      thresh= 4.112E-07 alpha_mix =  0.700 |ddv_scf|^2 =  6.091E-13
-
-      iter #  12 total cpu time :  1593.7 secs   av.it.:  21.0
-      thresh= 7.804E-08 alpha_mix =  0.700 |ddv_scf|^2 =  6.217E-14
-
-      iter #  13 total cpu time :  1649.6 secs   av.it.:  21.9
-      thresh= 2.493E-08 alpha_mix =  0.700 |ddv_scf|^2 =  2.768E-14
-
-      iter #  14 total cpu time :  1701.4 secs   av.it.:  20.0
-      thresh= 1.664E-08 alpha_mix =  0.700 |ddv_scf|^2 =  2.458E-15
-
-      iter #  15 total cpu time :  1755.4 secs   av.it.:  20.8
-      thresh= 4.958E-09 alpha_mix =  0.700 |ddv_scf|^2 =  4.160E-15
-
-      iter #  16 total cpu time :  1804.6 secs   av.it.:  18.9
-      thresh= 6.450E-09 alpha_mix =  0.700 |ddv_scf|^2 =  1.651E-15
-
-      iter #  17 total cpu time :  1853.7 secs   av.it.:  18.8
-      thresh= 4.063E-09 alpha_mix =  0.700 |ddv_scf|^2 =  1.842E-16
-
-      iter #  18 total cpu time :  1906.0 secs   av.it.:  20.3
-      thresh= 1.357E-09 alpha_mix =  0.700 |ddv_scf|^2 =  2.452E-17
-
-     End of self-consistent calculation
-
-     Convergence has been achieved 
-
-
-     Representation #   3 mode #   3
-
-     Self-consistent Calculation
-
-      iter #   1 total cpu time :  1945.3 secs   av.it.:  14.1
-      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.710E-05
-
-      iter #   2 total cpu time :  1999.6 secs   av.it.:  21.1
-      thresh= 4.135E-04 alpha_mix =  0.700 |ddv_scf|^2 =  5.459E-06
-
-      iter #   3 total cpu time :  2052.5 secs   av.it.:  20.4
-      thresh= 2.336E-04 alpha_mix =  0.700 |ddv_scf|^2 =  1.357E-08
-
-      iter #   4 total cpu time :  2108.3 secs   av.it.:  21.8
-      thresh= 1.165E-05 alpha_mix =  0.700 |ddv_scf|^2 =  7.660E-10
-
-      iter #   5 total cpu time :  2161.1 secs   av.it.:  20.5
-      thresh= 2.768E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.572E-11
-
-      iter #   6 total cpu time :  2214.9 secs   av.it.:  20.8
-      thresh= 3.965E-07 alpha_mix =  0.700 |ddv_scf|^2 =  1.140E-12
-
-      iter #   7 total cpu time :  2267.7 secs   av.it.:  20.4
-      thresh= 1.068E-07 alpha_mix =  0.700 |ddv_scf|^2 =  7.132E-14
-
-      iter #   8 total cpu time :  2320.1 secs   av.it.:  20.3
-      thresh= 2.671E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.086E-15
-
-      iter #   9 total cpu time :  2374.9 secs   av.it.:  21.4
-      thresh= 3.295E-09 alpha_mix =  0.700 |ddv_scf|^2 =  6.626E-17
-
-     End of self-consistent calculation
-
-     Convergence has been achieved 
-
-
-     Representation #   4 mode #   4
-
-     Self-consistent Calculation
-
-      iter #   1 total cpu time :  2414.6 secs   av.it.:  14.3
-      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  2.516E-05
-
-      iter #   2 total cpu time :  2468.9 secs   av.it.:  21.1
-      thresh= 5.016E-04 alpha_mix =  0.700 |ddv_scf|^2 =  1.230E-05
-
-      iter #   3 total cpu time :  2520.8 secs   av.it.:  20.0
-      thresh= 3.508E-04 alpha_mix =  0.700 |ddv_scf|^2 =  1.232E-08
-
-      iter #   4 total cpu time :  2577.1 secs   av.it.:  22.1
-      thresh= 1.110E-05 alpha_mix =  0.700 |ddv_scf|^2 =  6.770E-10
-
-      iter #   5 total cpu time :  2629.9 secs   av.it.:  20.5
-      thresh= 2.602E-06 alpha_mix =  0.700 |ddv_scf|^2 =  8.649E-12
-
-      iter #   6 total cpu time :  2681.1 secs   av.it.:  20.0
-      thresh= 2.941E-07 alpha_mix =  0.700 |ddv_scf|^2 =  6.910E-14
-
-      iter #   7 total cpu time :  2734.2 secs   av.it.:  20.7
-      thresh= 2.629E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.155E-15
-
-      iter #   8 total cpu time :  2787.7 secs   av.it.:  20.9
-      thresh= 3.399E-09 alpha_mix =  0.700 |ddv_scf|^2 =  5.138E-18
-
-     End of self-consistent calculation
-
-     Convergence has been achieved 
-
-
-     Representation #   5 mode #   5
-
-     Self-consistent Calculation
-
-      iter #   1 total cpu time :  2829.6 secs   av.it.:  15.2
-      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.475E-04
-
-      iter #   2 total cpu time :  2887.8 secs   av.it.:  22.8
-      thresh= 1.215E-03 alpha_mix =  0.700 |ddv_scf|^2 =  3.506E-03
-
-      iter #   3 total cpu time :  2933.9 secs   av.it.:  17.6
-      thresh= 5.921E-03 alpha_mix =  0.700 |ddv_scf|^2 =  4.410E-05
-
-      iter #   4 total cpu time :  2983.8 secs   av.it.:  19.3
-      thresh= 6.641E-04 alpha_mix =  0.700 |ddv_scf|^2 =  7.301E-07
-
-      iter #   5 total cpu time :  3035.9 secs   av.it.:  20.2
-      thresh= 8.545E-05 alpha_mix =  0.700 |ddv_scf|^2 =  3.449E-09
-
-      iter #   6 total cpu time :  3090.6 secs   av.it.:  21.5
-      thresh= 5.873E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.171E-10
-
-      iter #   7 total cpu time :  3146.9 secs   av.it.:  22.2
-      thresh= 1.082E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.561E-10
-
-      iter #   8 total cpu time :  3200.0 secs   av.it.:  20.5
-      thresh= 1.249E-06 alpha_mix =  0.700 |ddv_scf|^2 =  3.790E-10
-
-      iter #   9 total cpu time :  3247.9 secs   av.it.:  18.4
-      thresh= 1.947E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.093E-12
-
-      iter #  10 total cpu time :  3306.4 secs   av.it.:  23.0
-      thresh= 1.045E-07 alpha_mix =  0.700 |ddv_scf|^2 =  5.618E-12
-
-      iter #  11 total cpu time :  3354.8 secs   av.it.:  18.6
-      thresh= 2.370E-07 alpha_mix =  0.700 |ddv_scf|^2 =  2.882E-13
-
-      iter #  12 total cpu time :  3406.1 secs   av.it.:  19.9
-      thresh= 5.369E-08 alpha_mix =  0.700 |ddv_scf|^2 =  7.894E-15
-
-      iter #  13 total cpu time :  3462.7 secs   av.it.:  22.2
-      thresh= 8.885E-09 alpha_mix =  0.700 |ddv_scf|^2 =  3.677E-15
-
-      iter #  14 total cpu time :  3515.4 secs   av.it.:  20.3
-      thresh= 6.063E-09 alpha_mix =  0.700 |ddv_scf|^2 =  6.884E-15
-
-      iter #  15 total cpu time :  3562.5 secs   av.it.:  18.1
-      thresh= 8.297E-09 alpha_mix =  0.700 |ddv_scf|^2 =  1.193E-16
-
-      iter #  16 total cpu time :  3619.2 secs   av.it.:  22.2
-      thresh= 1.092E-09 alpha_mix =  0.700 |ddv_scf|^2 =  2.553E-16
-
-      iter #  17 total cpu time :  3667.0 secs   av.it.:  18.3
-      thresh= 1.598E-09 alpha_mix =  0.700 |ddv_scf|^2 =  4.854E-18
-
-     End of self-consistent calculation
-
-     Convergence has been achieved 
-
-
-     Representation #   6 mode #   6
-
-     Self-consistent Calculation
-
-      iter #   1 total cpu time :  3708.4 secs   av.it.:  15.1
-      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.182E-04
-
-      iter #   2 total cpu time :  3766.7 secs   av.it.:  22.9
-      thresh= 1.087E-03 alpha_mix =  0.700 |ddv_scf|^2 =  2.649E-03
-
-      iter #   3 total cpu time :  3812.9 secs   av.it.:  17.6
-      thresh= 5.147E-03 alpha_mix =  0.700 |ddv_scf|^2 =  4.344E-05
-
-      iter #   4 total cpu time :  3863.0 secs   av.it.:  19.3
-      thresh= 6.591E-04 alpha_mix =  0.700 |ddv_scf|^2 =  7.532E-07
-
-      iter #   5 total cpu time :  3915.0 secs   av.it.:  20.2
-      thresh= 8.679E-05 alpha_mix =  0.700 |ddv_scf|^2 =  4.314E-09
-
-      iter #   6 total cpu time :  3969.5 secs   av.it.:  21.4
-      thresh= 6.568E-06 alpha_mix =  0.700 |ddv_scf|^2 =  8.891E-11
-
-      iter #   7 total cpu time :  4026.9 secs   av.it.:  22.6
-      thresh= 9.429E-07 alpha_mix =  0.700 |ddv_scf|^2 =  2.049E-10
-
-      iter #   8 total cpu time :  4077.8 secs   av.it.:  19.7
-      thresh= 1.431E-06 alpha_mix =  0.700 |ddv_scf|^2 =  2.023E-10
-
-      iter #   9 total cpu time :  4128.9 secs   av.it.:  18.6
-      thresh= 1.422E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.054E-12
-
-      iter #  10 total cpu time :  4186.6 secs   av.it.:  22.5
-      thresh= 1.027E-07 alpha_mix =  0.700 |ddv_scf|^2 =  2.635E-12
-
-      iter #  11 total cpu time :  4235.8 secs   av.it.:  18.9
-      thresh= 1.623E-07 alpha_mix =  0.700 |ddv_scf|^2 =  5.000E-13
-
-      iter #  12 total cpu time :  4285.8 secs   av.it.:  19.4
-      thresh= 7.071E-08 alpha_mix =  0.700 |ddv_scf|^2 =  5.100E-15
-
-      iter #  13 total cpu time :  4342.9 secs   av.it.:  22.5
-      thresh= 7.141E-09 alpha_mix =  0.700 |ddv_scf|^2 =  3.350E-15
-
-      iter #  14 total cpu time :  4395.3 secs   av.it.:  20.3
-      thresh= 5.788E-09 alpha_mix =  0.700 |ddv_scf|^2 =  6.917E-15
-
-      iter #  15 total cpu time :  4442.5 secs   av.it.:  18.2
-      thresh= 8.317E-09 alpha_mix =  0.700 |ddv_scf|^2 =  1.137E-16
-
-      iter #  16 total cpu time :  4498.1 secs   av.it.:  21.8
-      thresh= 1.067E-09 alpha_mix =  0.700 |ddv_scf|^2 =  1.481E-16
-
-      iter #  17 total cpu time :  4546.7 secs   av.it.:  18.6
-      thresh= 1.217E-09 alpha_mix =  0.700 |ddv_scf|^2 =  5.574E-18
-
-     End of self-consistent calculation
-
-     Convergence has been achieved 
-
-     Number of q in the star =    6
-     List of q in the star:
-          1   1.250000000   0.000000000   0.000000000
-          2   0.625000000   1.082531755   0.000000000
-          3   0.625000000  -1.082531755   0.000000000
-          4  -0.625000000   1.082531755   0.000000000
-          5  -0.625000000  -1.082531755   0.000000000
-          6  -1.250000000   0.000000000   0.000000000
-
-     Diagonalizing the dynamical matrix
-
-     q = (    1.250000000   0.000000000   0.000000000 ) 
-
- **************************************************************************
-     freq (    1) =       4.930731 [THz] =     164.471468 [cm-1]
-     freq (    2) =       4.951344 [THz] =     165.159069 [cm-1]
-     freq (    3) =       5.328887 [THz] =     177.752547 [cm-1]
-     freq (    4) =       5.912185 [THz] =     197.209252 [cm-1]
-     freq (    5) =       6.416505 [THz] =     214.031578 [cm-1]
-     freq (    6) =       6.506784 [THz] =     217.042964 [cm-1]
- **************************************************************************
-
-     Using the point group C_2v (mm2)  to classify the modes
-     there are  4 classes
-     the character table:
-
-       E     C2    s_v   s_v' 
-A_1    1.00  1.00  1.00  1.00
-A_2    1.00  1.00 -1.00 -1.00
-B_1    1.00 -1.00  1.00 -1.00
-B_2    1.00 -1.00 -1.00  1.00
-
-     the symmetry operations in each class and the name of the first element:
-
-     E        1
-          identity                                               
-     C2       2
-          180 deg rotation - cart. axis [1,0,0]                  
-     s_v      4
-          inv. 180 deg rotation - cart. axis [0,1,0]             
-     s_v'     3
-          inv. 180 deg rotation - cart. axis [0,0,1]             
-
-     Mode symmetry, C_2v (mm2)  point group:
-
-     freq (   1-   1) =        164.5  [cm-1]   --> B_2  D_4  S_4      
-     freq (   2-   2) =        165.2  [cm-1]   --> A_2  D_2  S_2      
-     freq (   3-   3) =        177.8  [cm-1]   --> A_1  D_1  S_1      
-     freq (   4-   4) =        197.2  [cm-1]   --> B_1  D_3  S_3      
-     freq (   5-   5) =        214.0  [cm-1]   --> B_2  D_4  S_4      
-     freq (   6-   6) =        217.0  [cm-1]   --> A_1  D_1  S_1      
-
-     THERMO_PW    :      1h15m CPU      1h16m WALL
-
-
-   This run was terminated on:  14:36: 3  19Feb2024            
-
-=------------------------------------------------------------------------------=
-   JOB DONE.
-=------------------------------------------------------------------------------=
+      Title line not specified: using 'default'.
