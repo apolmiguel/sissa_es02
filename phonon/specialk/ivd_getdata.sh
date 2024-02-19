@@ -1,16 +1,16 @@
 #!/bin/bash
 
-rm ivc_conv_raw.dat
-rm ivc_conv_clean.dat
+rm ivd_conv_raw.dat
+rm ivd_conv_clean.dat
 
-kptlist=($(seq 1 1 12))
+specialklist=($(seq 0 1 3))
 
-for kpt in ${kptlist[@]}
+for spec in ${specialklist[@]}
 do
 
 
-grep -A 2 "K_POINTS automatic" ./kpt${kpt}/sc.kpt${kpt}.scf.in >> ivc_conv_raw.dat
-grep -A 11 "Diagonalizing the dynamical matrix" ./kpt${kpt}/sc.kpt${kpt}.scf.out >> ivc_conv_raw.dat
+grep -A 2 "K_POINTS automatic" ./special${spec}/sc.specialk${spec}.scf.in >> ivd_raw.dat
+grep -A 11 "Diagonalizing the dynamical matrix" ./special${spec}/sc.specialk${spec}.scf.out >> ivd_raw.dat
 done
 
-awk '/freq/ {print$(NF-1)}' ./ivc_conv_raw.dat >> ./ivc_conv_clean.dat
+awk '/freq/ {print$(NF-1)}' ./ivd_raw.dat >> ./ivd_clean.dat
