@@ -1,5 +1,5 @@
-PREFIX='mpirun -np 20'
-SUFFIX=' -nk 4 '
+PREFIX='mpirun -np 40'
+SUFFIX='-nk 5 '
 PWDIR="/home/atan/q-e-qe-7.2/bin"
 PSEUDODIR="/home/atan/sissa_es02/"
 OUTDIR="../tmp/"

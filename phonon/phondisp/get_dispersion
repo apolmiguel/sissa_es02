@@ -67,23 +67,16 @@ EOF
 
 echo 'creating ph_control file'
 cat > ph_control << EOF
+
  &inputph
 	prefix='$NAME',
 	fildyn='sc.dyn.xml',
-	#qplot=.TRUE.,
-	ldisp=.TRUE., # calculates phonons for a grid specified by nqi
+	ldisp=.TRUE. 
 	nq1=4,
 	nq2=4,
 	nq3=2,
 	tr2_ph=1.0d-16,
-	q_in_band_form=.TRUE. # interpolates points between specified k-points
  /
- 5 # number of points in the band
- 0.00 0.00 0.00 5 ## gamma, 5 points
- 1.25 0.00 0.00 5 ## K
- 1.00 0.577360 0.00 5 ## M
- 0.00 0.00 0.6466778416 5 ## A
- 0.00 0.00 0.00 1 ## gamma , 1 point (repeat gamma to close the band)
 EOF
 
 $THERMO_PW_COMMAND < $NAME.phondisp.scf.in > $NAME.phondisp.scf.out

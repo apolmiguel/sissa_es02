@@ -6,12 +6,12 @@ creating ph_control file
 creating thermo_pw file
 creating input file sc.specialk1.scf.in
 creating ph_control file
- running the phonon calculation for kvec=1.25 0 0
+ running the phonon calculation for kvec=0.625 0 0
 creating thermo_pw file
 creating input file sc.specialk2.scf.in
 creating ph_control file
- running the phonon calculation for kvec=1 0.577350 0
+ running the phonon calculation for kvec=0.5 0.288675135 0
 creating thermo_pw file
 creating input file sc.specialk3.scf.in
 creating ph_control file
- running the phonon calculation for kvec=0 0 0.6466778416
+ running the phonon calculation for kvec=0 0 0.323338921

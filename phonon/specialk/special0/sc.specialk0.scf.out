@@ -1,5 +1,5 @@
 
-     Program THERMO_PW v.7.2 starts on 19Feb2024 at 13:11:13 
+     Program THERMO_PW v.7.2 starts on 20Feb2024 at 10:57: 1 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -10,12 +10,12 @@
      in publications or presentations arising from this work. More details at
      http://www.quantum-espresso.org/quote
 
-     Parallel version (MPI), running on    20 processors
+     Parallel version (MPI), running on    40 processors
 
-     MPI processes distributed on     1 nodes
-     K-points division:     npool     =       4
-     R & G space division:  proc/nbgrp/npool/nimage =       5
-     315564 MiB available memory on the printing compute node when the environment starts
+     MPI processes distributed on     3 nodes
+     K-points division:     npool     =       5
+     R & G space division:  proc/nbgrp/npool/nimage =       8
+     295679 MiB available memory on the printing compute node when the environment starts
 
      Reading input from _temporary_1
      file Sc.pz-spn-kjpaw_psl.1.0.0.UPF: wavefunction(s)  3S 3P 3D renormalized
@@ -481,8 +481,8 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
 
      WARNING: check_stop already initialized
 
-     K-points division:     npool     =       4
-     R & G space division:  proc/nbgrp/npool/nimage =       5
+     K-points division:     npool     =       5
+     R & G space division:  proc/nbgrp/npool/nimage =       8
      Subspace diagonalization in iterative solution of the eigenvalue problem:
      a serial algorithm will be used
 
@@ -490,8 +490,8 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
      Parallelization info
      --------------------
      sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
-     Min         164     144     44                 5857     4796     826
-     Max         165     145     45                 5859     4801     829
+     Min         102      90     27                 3660     2998     516
+     Max         103      91     29                 3663     3003     519
      Sum         823     721    223                29291    23991    4139
 
      Using Slab Decomposition
@@ -564,9 +564,9 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
 
      Smooth grid:    23991 G-vectors     FFT dimensions: (  36,  36,  54)
 
-     Estimated max dynamical RAM per process >      15.33 MB
+     Estimated max dynamical RAM per process >       8.92 MB
 
-     Estimated total dynamical RAM >     285.22 MB
+     Estimated total dynamical RAM >     328.29 MB
 
      Check: negative core charge=   -0.000016
 
@@ -576,169 +576,189 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
      Starting wfcs are   20 randomized atomic wfcs
      Checking if some PAW data can be deallocated... 
 
-     total cpu time spent up to now is        1.4 secs
+     total cpu time spent up to now is        1.0 secs
 
      Self-consistent Calculation
 
      iteration #  1     ecut=    70.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
-     ethr =  1.00E-02,  avg # of iterations =  2.3
+     ethr =  1.00E-02,  avg # of iterations =  2.4
 
      Threshold (ethr) on eigenvalues was too large:
      Diagonalizing with lowered threshold
 
      Davidson diagonalization with overlap
-     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
      c_bands:  3 eigenvalues not converged
      c_bands:  2 eigenvalues not converged
+     c_bands:  3 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
-     c_bands:  5 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
-     c_bands:  5 eigenvalues not converged
+     c_bands:  3 eigenvalues not converged
      c_bands:  4 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     c_bands:  5 eigenvalues not converged
-     c_bands:  5 eigenvalues not converged
      c_bands:  3 eigenvalues not converged
+     c_bands:  3 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
      c_bands:  2 eigenvalues not converged
-     c_bands:  3 eigenvalues not converged
+     c_bands:  4 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
-     ethr =  1.40E-05,  avg # of iterations = 17.6
+     c_bands:  1 eigenvalues not converged
+     ethr =  1.39E-05,  avg # of iterations = 17.9
 
-     total cpu time spent up to now is       10.5 secs
+     total cpu time spent up to now is        6.2 secs
 
-     total energy              =    -306.87467436 Ry
-     estimated scf accuracy    <       0.01667821 Ry
+     total energy              =    -306.87466100 Ry
+     estimated scf accuracy    <       0.01670051 Ry
 
      iteration #  2     ecut=    70.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
-     ethr =  7.58E-05,  avg # of iterations =  4.3
+     ethr =  7.59E-05,  avg # of iterations =  4.3
 
-     total cpu time spent up to now is       12.5 secs
+     total cpu time spent up to now is        7.4 secs
 
-     total energy              =    -306.87853387 Ry
-     estimated scf accuracy    <       0.00098769 Ry
+     total energy              =    -306.87855294 Ry
+     estimated scf accuracy    <       0.00102894 Ry
 
      iteration #  3     ecut=    70.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
-     c_bands:  2 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
-     c_bands:  2 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
-     ethr =  4.49E-06,  avg # of iterations =  9.4
+     ethr =  4.68E-06,  avg # of iterations =  9.2
 
-     total cpu time spent up to now is       15.8 secs
+     total cpu time spent up to now is        9.2 secs
 
-     total energy              =    -306.87937265 Ry
-     estimated scf accuracy    <       0.00028118 Ry
+     total energy              =    -306.87937826 Ry
+     estimated scf accuracy    <       0.00025523 Ry
 
      iteration #  4     ecut=    70.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
      c_bands:  1 eigenvalues not converged
-     ethr =  1.28E-06,  avg # of iterations =  6.9
+     ethr =  1.16E-06,  avg # of iterations =  7.0
 
-     total cpu time spent up to now is       18.3 secs
+     total cpu time spent up to now is       10.7 secs
 
-     total energy              =    -306.87951120 Ry
-     estimated scf accuracy    <       0.00012522 Ry
+     total energy              =    -306.87951403 Ry
+     estimated scf accuracy    <       0.00011470 Ry
 
      iteration #  5     ecut=    70.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
-     ethr =  5.69E-07,  avg # of iterations =  5.6
+     ethr =  5.21E-07,  avg # of iterations =  6.0
 
-     total cpu time spent up to now is       20.5 secs
+     total cpu time spent up to now is       12.0 secs
 
-     total energy              =    -306.87956441 Ry
-     estimated scf accuracy    <       0.00000571 Ry
+     total energy              =    -306.87956552 Ry
+     estimated scf accuracy    <       0.00000672 Ry
 
      iteration #  6     ecut=    70.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
-     ethr =  2.59E-08,  avg # of iterations = 11.9
+     ethr =  3.06E-08,  avg # of iterations = 10.4
 
-     total cpu time spent up to now is       24.2 secs
+     total cpu time spent up to now is       14.0 secs
 
-     total energy              =    -306.87956968 Ry
-     estimated scf accuracy    <       0.00001016 Ry
+     total energy              =    -306.87956934 Ry
+     estimated scf accuracy    <       0.00000997 Ry
 
      iteration #  7     ecut=    70.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
-     ethr =  2.59E-08,  avg # of iterations =  6.5
+     ethr =  3.06E-08,  avg # of iterations =  6.5
 
-     total cpu time spent up to now is       26.6 secs
+     total cpu time spent up to now is       15.4 secs
 
-     total energy              =    -306.87957306 Ry
-     estimated scf accuracy    <       0.00000124 Ry
+     total energy              =    -306.87957290 Ry
+     estimated scf accuracy    <       0.00000223 Ry
 
      iteration #  8     ecut=    70.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
-     ethr =  5.63E-09,  avg # of iterations =  5.8
+     ethr =  1.01E-08,  avg # of iterations =  4.7
 
-     total cpu time spent up to now is       28.9 secs
+     total cpu time spent up to now is       16.6 secs
 
-     total energy              =    -306.87957362 Ry
-     estimated scf accuracy    <       0.00000011 Ry
+     total energy              =    -306.87957351 Ry
+     estimated scf accuracy    <          9.0E-09 Ry
 
      iteration #  9     ecut=    70.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
-     ethr =  5.08E-10,  avg # of iterations = 10.4
-
-     total cpu time spent up to now is       32.2 secs
-
-     total energy              =    -306.87957378 Ry
-     estimated scf accuracy    <       0.00000001 Ry
-
-     iteration # 10     ecut=    70.00 Ry     beta= 0.70
-     Davidson diagonalization with overlap
-     ethr =  5.50E-11,  avg # of iterations =  9.2
-
-     total cpu time spent up to now is       35.2 secs
-
-     total energy              =    -306.87957379 Ry
-     estimated scf accuracy    <          7.7E-09 Ry
-
-     iteration # 11     ecut=    70.00 Ry     beta= 0.70
-     Davidson diagonalization with overlap
-     ethr =  3.50E-11,  avg # of iterations =  4.7
-
-     total cpu time spent up to now is       37.3 secs
-
-     total energy              =    -306.87957379 Ry
-     estimated scf accuracy    <          1.2E-10 Ry
-
-     iteration # 12     ecut=    70.00 Ry     beta= 0.70
-     Davidson diagonalization with overlap
      c_bands:  1 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
      c_bands:  3 eigenvalues not converged
      c_bands:  2 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
+     c_bands:  3 eigenvalues not converged
+     c_bands:  3 eigenvalues not converged
+     c_bands:  3 eigenvalues not converged
+     c_bands:  3 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  3 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     c_bands:  4 eigenvalues not converged
+     c_bands:  3 eigenvalues not converged
+     c_bands:  1 eigenvalues not converged
      c_bands:  2 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
      c_bands:  1 eigenvalues not converged
-     c_bands:  1 eigenvalues not converged
+     c_bands:  3 eigenvalues not converged
      c_bands:  2 eigenvalues not converged
-     ethr =  5.27E-13,  avg # of iterations = 17.8
+     c_bands:  3 eigenvalues not converged
+     c_bands:  2 eigenvalues not converged
+     ethr =  4.08E-11,  avg # of iterations = 20.1
 
-     total cpu time spent up to now is       43.5 secs
+     total cpu time spent up to now is       21.1 secs
 
      total energy              =    -306.87957379 Ry
-     estimated scf accuracy    <          1.3E-10 Ry
+     estimated scf accuracy    <          5.2E-09 Ry
+
+     iteration # 10     ecut=    70.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.38E-11,  avg # of iterations =  5.4
+
+     total cpu time spent up to now is       22.3 secs
+
+     total energy              =    -306.87957379 Ry
+     estimated scf accuracy    <          1.5E-09 Ry
+
+     iteration # 11     ecut=    70.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  6.90E-12,  avg # of iterations = 10.5
+
+     total cpu time spent up to now is       24.3 secs
+
+     total energy              =    -306.87957379 Ry
+     estimated scf accuracy    <          9.8E-09 Ry
+
+     iteration # 12     ecut=    70.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  6.90E-12,  avg # of iterations =  6.3
+
+     total cpu time spent up to now is       25.7 secs
+
+     total energy              =    -306.87957379 Ry
+     estimated scf accuracy    <          6.2E-10 Ry
 
      iteration # 13     ecut=    70.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
-     ethr =  5.27E-13,  avg # of iterations =  1.3
+     ethr =  2.80E-12,  avg # of iterations =  2.4
 
-     total cpu time spent up to now is       44.9 secs
+     total cpu time spent up to now is       26.6 secs
 
      total energy              =    -306.87957379 Ry
-     estimated scf accuracy    <          1.0E-10 Ry
+     estimated scf accuracy    <          4.1E-10 Ry
 
      iteration # 14     ecut=    70.00 Ry     beta= 0.70
      Davidson diagonalization with overlap
-     ethr =  4.77E-13,  avg # of iterations =  5.2
+     ethr =  1.87E-12,  avg # of iterations =  5.1
 
-     total cpu time spent up to now is       47.0 secs
+     total cpu time spent up to now is       27.7 secs
 
      End of self-consistent calculation
 
@@ -748,16 +768,16 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
 
 !    total energy              =    -306.87957379 Ry
      total all-electron energy =     -3050.020345 Ry
-     estimated scf accuracy    <          8.0E-13 Ry
+     estimated scf accuracy    <          1.3E-11 Ry
      smearing contrib. (-TS)   =      -0.00084195 Ry
      internal energy E=F+TS    =    -306.87873184 Ry
 
      The total energy is F=E-TS. E is the sum of the following terms:
-     one-electron contribution =     -67.48761471 Ry
-     hartree contribution      =      40.08964318 Ry
-     xc contribution           =     -34.67339557 Ry
+     one-electron contribution =     -67.48756932 Ry
+     hartree contribution      =      40.08958536 Ry
+     xc contribution           =     -34.67338400 Ry
      ewald contribution        =    -131.05084962 Ry
-     one-center paw contrib.   =    -113.75651512 Ry
+     one-center paw contrib.   =    -113.75651426 Ry
 
      convergence has been achieved in  14 iterations
 
@@ -785,8 +805,8 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
      Parallelization info
      --------------------
      sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
-     Min         164     144     44                 5857     4796     826
-     Max         165     145     45                 5859     4801     829
+     Min         102      90     27                 3660     2998     516
+     Max         103      91     29                 3663     3003     519
      Sum         823     721    223                29291    23991    4139
 
      Using Slab Decomposition
@@ -811,8 +831,8 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
      Parallelization info
      --------------------
      sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
-     Min         164     144     44                 5857     4796     826
-     Max         165     145     45                 5859     4801     829
+     Min         102      90     27                 3660     2998     516
+     Max         103      91     29                 3663     3003     519
      Sum         823     721    223                29291    23991    4139
 
      Using Slab Decomposition
@@ -885,9 +905,9 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
 
      Smooth grid:    23991 G-vectors     FFT dimensions: (  36,  36,  54)
 
-     Estimated max dynamical RAM per process >       7.96 MB
+     Estimated max dynamical RAM per process >       5.00 MB
 
-     Estimated total dynamical RAM >     159.13 MB
+     Estimated total dynamical RAM >     200.07 MB
 
      Check: negative core charge=   -0.000016
 
@@ -905,7 +925,7 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
      Total points  168
      Diagonalized points  168   Symmetrized points    0
 
-     total cpu time spent up to now is       63.2 secs
+     total cpu time spent up to now is       37.8 secs
 
      End of band structure calculation
 
@@ -960,8 +980,8 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
      25 Sym.Ops. (with q -> -q+G )
 
 
-     G cutoff =  300.9889  (   5859 G-vectors)     FFT grid: ( 36, 36, 54)
-     G cutoff =  263.3653  (   4798 G-vectors)  smooth grid: ( 36, 36, 54)
+     G cutoff =  300.9889  (   3663 G-vectors)     FFT grid: ( 36, 36, 54)
+     G cutoff =  263.3653  (   3000 G-vectors)  smooth grid: ( 36, 36, 54)
 
      number of k points=   168  Marzari-Vanderbilt smearing, width (Ry)=  0.0200
 
@@ -998,7 +1018,7 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
 
 
      Alpha used in Ewald sum =   2.8000
-     PHONON       :     18.81s CPU     19.39s WALL (       1 calls)
+     PHONON       :     11.84s CPU     12.21s WALL (       1 calls)
 
 
      Representation #   1 mode #   1
@@ -1007,48 +1027,48 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
 
      Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
 
-      iter #   1 total cpu time :    27.4 secs   av.it.:  14.7
-      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  2.365E-04
+      iter #   1 total cpu time :    16.7 secs   av.it.:  14.7
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  2.281E-04
 
      Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
 
-      iter #   2 total cpu time :    37.0 secs   av.it.:  20.1
-      thresh= 1.538E-03 alpha_mix =  0.700 |ddv_scf|^2 =  7.286E-04
+      iter #   2 total cpu time :    22.2 secs   av.it.:  20.1
+      thresh= 1.510E-03 alpha_mix =  0.700 |ddv_scf|^2 =  7.029E-04
 
      Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
 
-      iter #   3 total cpu time :    45.5 secs   av.it.:  17.5
-      thresh= 2.699E-03 alpha_mix =  0.700 |ddv_scf|^2 =  2.243E-08
+      iter #   3 total cpu time :    27.0 secs   av.it.:  17.5
+      thresh= 2.651E-03 alpha_mix =  0.700 |ddv_scf|^2 =  2.164E-08
 
      Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
 
-      iter #   4 total cpu time :    55.8 secs   av.it.:  22.1
-      thresh= 1.498E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.160E-09
+      iter #   4 total cpu time :    32.8 secs   av.it.:  22.1
+      thresh= 1.471E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.119E-09
 
      Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
 
-      iter #   5 total cpu time :    65.3 secs   av.it.:  20.0
-      thresh= 3.406E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.946E-11
+      iter #   5 total cpu time :    38.2 secs   av.it.:  20.1
+      thresh= 3.345E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.878E-11
 
      Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
 
-      iter #   6 total cpu time :    74.6 secs   av.it.:  19.9
-      thresh= 4.412E-07 alpha_mix =  0.700 |ddv_scf|^2 =  5.539E-13
+      iter #   6 total cpu time :    43.5 secs   av.it.:  19.9
+      thresh= 4.334E-07 alpha_mix =  0.700 |ddv_scf|^2 =  5.345E-13
 
      Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
 
-      iter #   7 total cpu time :    83.7 secs   av.it.:  19.0
-      thresh= 7.442E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.726E-15
+      iter #   7 total cpu time :    48.6 secs   av.it.:  19.0
+      thresh= 7.311E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.670E-15
 
      Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
 
-      iter #   8 total cpu time :    93.6 secs   av.it.:  21.1
-      thresh= 4.154E-09 alpha_mix =  0.700 |ddv_scf|^2 =  1.551E-15
+      iter #   8 total cpu time :    54.3 secs   av.it.:  21.2
+      thresh= 4.087E-09 alpha_mix =  0.700 |ddv_scf|^2 =  1.495E-15
 
      Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
 
-      iter #   9 total cpu time :   102.5 secs   av.it.:  17.9
-      thresh= 3.939E-09 alpha_mix =  0.700 |ddv_scf|^2 =  6.847E-17
+      iter #   9 total cpu time :    59.2 secs   av.it.:  18.0
+      thresh= 3.866E-09 alpha_mix =  0.700 |ddv_scf|^2 =  6.574E-17
 
      End of self-consistent calculation
 
@@ -1059,47 +1079,47 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
 
      Self-consistent Calculation
 
-     Pert. #  1: Fermi energy shift (Ry) =     3.9754E-19     1.2245E-40
-     Pert. #  2: Fermi energy shift (Ry) =     2.5298E-19     3.6734E-40
+     Pert. #  1: Fermi energy shift (Ry) =     1.4456E-19    -9.1835E-41
+     Pert. #  2: Fermi energy shift (Ry) =     4.6982E-19    -1.5306E-40
 
-      iter #   1 total cpu time :   116.7 secs   av.it.:  13.2
-      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  2.308E-06
+      iter #   1 total cpu time :    67.3 secs   av.it.:  13.2
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  2.227E-06
 
-     Pert. #  1: Fermi energy shift (Ry) =    -2.6202E-19     0.0000E+00
-     Pert. #  2: Fermi energy shift (Ry) =     1.8070E-19     3.8265E-42
+     Pert. #  1: Fermi energy shift (Ry) =     3.1623E-19     2.2959E-41
+     Pert. #  2: Fermi energy shift (Ry) =     9.9385E-20    -1.6263E-41
 
-      iter #   2 total cpu time :   138.0 secs   av.it.:  22.2
-      thresh= 1.519E-04 alpha_mix =  0.700 |ddv_scf|^2 =  2.166E-07
+      iter #   2 total cpu time :    79.0 secs   av.it.:  22.2
+      thresh= 1.492E-04 alpha_mix =  0.700 |ddv_scf|^2 =  2.090E-07
 
-     Pert. #  1: Fermi energy shift (Ry) =    -2.1684E-19     1.4349E-42
-     Pert. #  2: Fermi energy shift (Ry) =     1.2649E-19     1.6741E-42
+     Pert. #  1: Fermi energy shift (Ry) =     1.2649E-18     5.7397E-42
+     Pert. #  2: Fermi energy shift (Ry) =     9.0350E-20    -1.0523E-41
 
-      iter #   3 total cpu time :   159.5 secs   av.it.:  22.3
-      thresh= 4.654E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.208E-09
+      iter #   3 total cpu time :    90.9 secs   av.it.:  22.4
+      thresh= 4.571E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.165E-09
 
-     Pert. #  1: Fermi energy shift (Ry) =     2.1684E-19    -5.9789E-42
-     Pert. #  2: Fermi energy shift (Ry) =     2.8912E-19     1.5545E-42
+     Pert. #  1: Fermi energy shift (Ry) =    -1.8070E-19     5.7397E-42
+     Pert. #  2: Fermi energy shift (Ry) =     3.0719E-19    -1.0523E-41
 
-      iter #   4 total cpu time :   179.3 secs   av.it.:  21.0
-      thresh= 3.475E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.371E-11
+      iter #   4 total cpu time :   102.1 secs   av.it.:  21.0
+      thresh= 3.414E-06 alpha_mix =  0.700 |ddv_scf|^2 =  1.323E-11
 
-     Pert. #  1: Fermi energy shift (Ry) =    -3.6140E-19    -5.9789E-42
-     Pert. #  2: Fermi energy shift (Ry) =     3.0719E-19     1.5545E-42
+     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00    -1.4349E-41
+     Pert. #  2: Fermi energy shift (Ry) =     5.4210E-20    -3.8265E-42
 
-      iter #   5 total cpu time :   200.5 secs   av.it.:  22.4
-      thresh= 3.703E-07 alpha_mix =  0.700 |ddv_scf|^2 =  5.337E-14
+      iter #   5 total cpu time :   113.8 secs   av.it.:  22.4
+      thresh= 3.637E-07 alpha_mix =  0.700 |ddv_scf|^2 =  5.150E-14
 
-     Pert. #  1: Fermi energy shift (Ry) =    -7.2280E-20    -5.9789E-42
-     Pert. #  2: Fermi energy shift (Ry) =     2.1684E-19     1.5545E-42
+     Pert. #  1: Fermi energy shift (Ry) =    -1.0842E-19    -1.4349E-41
+     Pert. #  2: Fermi energy shift (Ry) =    -1.0842E-19    -3.8265E-42
 
-      iter #   6 total cpu time :   221.7 secs   av.it.:  22.2
-      thresh= 2.310E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.081E-15
+      iter #   6 total cpu time :   125.7 secs   av.it.:  22.3
+      thresh= 2.269E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.044E-15
 
-     Pert. #  1: Fermi energy shift (Ry) =     8.6736E-19    -5.9789E-42
-     Pert. #  2: Fermi energy shift (Ry) =     4.5175E-19     1.5545E-42
+     Pert. #  1: Fermi energy shift (Ry) =     6.8666E-19    -1.4349E-41
+     Pert. #  2: Fermi energy shift (Ry) =    -1.8070E-20    -3.8265E-42
 
-      iter #   7 total cpu time :   243.2 secs   av.it.:  22.8
-      thresh= 3.288E-09 alpha_mix =  0.700 |ddv_scf|^2 =  5.851E-18
+      iter #   7 total cpu time :   137.8 secs   av.it.:  22.8
+      thresh= 3.231E-09 alpha_mix =  0.700 |ddv_scf|^2 =  5.661E-18
 
      End of self-consistent calculation
 
@@ -1110,40 +1130,40 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
 
      Self-consistent Calculation
 
-     Pert. #  1: Fermi energy shift (Ry) =     1.7233E-26     0.0000E+00
+     Pert. #  1: Fermi energy shift (Ry) =    -5.5145E-25     0.0000E+00
 
-      iter #   1 total cpu time :   250.4 secs   av.it.:  12.8
-      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  7.080E-06
+      iter #   1 total cpu time :   142.1 secs   av.it.:  12.9
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  6.831E-06
 
-     Pert. #  1: Fermi energy shift (Ry) =    -1.3786E-25     0.0000E+00
+     Pert. #  1: Fermi energy shift (Ry) =    -6.8932E-26     0.0000E+00
 
-      iter #   2 total cpu time :   259.7 secs   av.it.:  19.4
-      thresh= 2.661E-04 alpha_mix =  0.700 |ddv_scf|^2 =  5.304E-07
+      iter #   2 total cpu time :   147.5 secs   av.it.:  19.5
+      thresh= 2.614E-04 alpha_mix =  0.700 |ddv_scf|^2 =  5.117E-07
+
+     Pert. #  1: Fermi energy shift (Ry) =    -5.5145E-25     1.2245E-40
+
+      iter #   3 total cpu time :   152.8 secs   av.it.:  19.7
+      thresh= 7.154E-05 alpha_mix =  0.700 |ddv_scf|^2 =  5.151E-09
 
      Pert. #  1: Fermi energy shift (Ry) =    -5.5145E-25     0.0000E+00
 
-      iter #   3 total cpu time :   269.1 secs   av.it.:  19.6
-      thresh= 7.283E-05 alpha_mix =  0.700 |ddv_scf|^2 =  5.339E-09
+      iter #   4 total cpu time :   157.8 secs   av.it.:  18.8
+      thresh= 7.177E-06 alpha_mix =  0.700 |ddv_scf|^2 =  3.434E-11
 
-     Pert. #  1: Fermi energy shift (Ry) =    -1.3786E-25     0.0000E+00
+     Pert. #  1: Fermi energy shift (Ry) =    -2.7573E-25     0.0000E+00
 
-      iter #   4 total cpu time :   278.0 secs   av.it.:  18.7
-      thresh= 7.307E-06 alpha_mix =  0.700 |ddv_scf|^2 =  3.559E-11
+      iter #   5 total cpu time :   162.9 secs   av.it.:  19.0
+      thresh= 5.860E-07 alpha_mix =  0.700 |ddv_scf|^2 =  2.374E-14
 
-     Pert. #  1: Fermi energy shift (Ry) =     2.7573E-25     0.0000E+00
+     Pert. #  1: Fermi energy shift (Ry) =    -5.5145E-25     0.0000E+00
 
-      iter #   5 total cpu time :   287.1 secs   av.it.:  19.0
-      thresh= 5.966E-07 alpha_mix =  0.700 |ddv_scf|^2 =  2.460E-14
+      iter #   6 total cpu time :   168.2 secs   av.it.:  19.3
+      thresh= 1.541E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.897E-15
 
-     Pert. #  1: Fermi energy shift (Ry) =    -2.7573E-25     9.5662E-43
+     Pert. #  1: Fermi energy shift (Ry) =    -2.7573E-25     0.0000E+00
 
-      iter #   6 total cpu time :   296.3 secs   av.it.:  19.3
-      thresh= 1.568E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.966E-15
-
-     Pert. #  1: Fermi energy shift (Ry) =    -2.7573E-25     9.5662E-43
-
-      iter #   7 total cpu time :   305.5 secs   av.it.:  19.4
-      thresh= 4.434E-09 alpha_mix =  0.700 |ddv_scf|^2 =  2.829E-19
+      iter #   7 total cpu time :   173.5 secs   av.it.:  19.4
+      thresh= 4.355E-09 alpha_mix =  0.700 |ddv_scf|^2 =  2.730E-19
 
      End of self-consistent calculation
 
@@ -1154,47 +1174,47 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
 
      Self-consistent Calculation
 
-     Pert. #  1: Fermi energy shift (Ry) =    -1.4476E-24     2.5077E-37
-     Pert. #  2: Fermi energy shift (Ry) =     6.8932E-26     1.8808E-37
+     Pert. #  1: Fermi energy shift (Ry) =     1.1029E-24     2.5077E-37
+     Pert. #  2: Fermi energy shift (Ry) =     0.0000E+00     1.8808E-37
 
-      iter #   1 total cpu time :   319.5 secs   av.it.:  13.1
-      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.940E-06
+      iter #   1 total cpu time :   181.4 secs   av.it.:  13.1
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  1.872E-06
 
-     Pert. #  1: Fermi energy shift (Ry) =    -6.8932E-26    -3.9183E-39
-     Pert. #  2: Fermi energy shift (Ry) =     1.7233E-26    -1.9592E-39
+     Pert. #  1: Fermi energy shift (Ry) =     1.3786E-25    -3.9183E-39
+     Pert. #  2: Fermi energy shift (Ry) =     1.3786E-25    -3.9183E-39
 
-      iter #   2 total cpu time :   340.7 secs   av.it.:  22.0
-      thresh= 1.393E-04 alpha_mix =  0.700 |ddv_scf|^2 =  1.577E-07
+      iter #   2 total cpu time :   193.1 secs   av.it.:  22.1
+      thresh= 1.368E-04 alpha_mix =  0.700 |ddv_scf|^2 =  1.521E-07
 
-     Pert. #  1: Fermi energy shift (Ry) =    -4.1359E-25     0.0000E+00
-     Pert. #  2: Fermi energy shift (Ry) =    -1.3786E-25    -1.4694E-39
+     Pert. #  1: Fermi energy shift (Ry) =     2.7573E-25     9.7958E-40
+     Pert. #  2: Fermi energy shift (Ry) =    -2.7573E-25     9.7958E-40
 
-      iter #   3 total cpu time :   361.9 secs   av.it.:  22.3
-      thresh= 3.971E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.343E-09
+      iter #   3 total cpu time :   204.9 secs   av.it.:  22.3
+      thresh= 3.900E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.296E-09
 
-     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
-     Pert. #  2: Fermi energy shift (Ry) =    -5.5145E-25    -3.0612E-41
+     Pert. #  1: Fermi energy shift (Ry) =     0.0000E+00     3.0612E-41
+     Pert. #  2: Fermi energy shift (Ry) =     0.0000E+00     1.5306E-41
 
-      iter #   4 total cpu time :   381.8 secs   av.it.:  21.0
-      thresh= 3.665E-06 alpha_mix =  0.700 |ddv_scf|^2 =  9.948E-12
+      iter #   4 total cpu time :   216.4 secs   av.it.:  21.0
+      thresh= 3.600E-06 alpha_mix =  0.700 |ddv_scf|^2 =  9.598E-12
 
-     Pert. #  1: Fermi energy shift (Ry) =    -1.3786E-25     5.7397E-42
-     Pert. #  2: Fermi energy shift (Ry) =     5.5145E-25     0.0000E+00
+     Pert. #  1: Fermi energy shift (Ry) =     2.7573E-25     0.0000E+00
+     Pert. #  2: Fermi energy shift (Ry) =     0.0000E+00     0.0000E+00
 
-      iter #   5 total cpu time :   402.4 secs   av.it.:  21.6
-      thresh= 3.154E-07 alpha_mix =  0.700 |ddv_scf|^2 =  5.126E-14
+      iter #   5 total cpu time :   228.0 secs   av.it.:  21.6
+      thresh= 3.098E-07 alpha_mix =  0.700 |ddv_scf|^2 =  4.946E-14
 
-     Pert. #  1: Fermi energy shift (Ry) =    -6.8932E-25     5.7397E-42
-     Pert. #  2: Fermi energy shift (Ry) =     1.3786E-25     0.0000E+00
+     Pert. #  1: Fermi energy shift (Ry) =     5.5145E-25    -7.6530E-42
+     Pert. #  2: Fermi energy shift (Ry) =     0.0000E+00    -7.6530E-42
 
-      iter #   6 total cpu time :   424.1 secs   av.it.:  23.0
-      thresh= 2.264E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.517E-15
+      iter #   6 total cpu time :   240.3 secs   av.it.:  23.0
+      thresh= 2.224E-08 alpha_mix =  0.700 |ddv_scf|^2 =  1.464E-15
 
-     Pert. #  1: Fermi energy shift (Ry) =    -2.7573E-25     5.7397E-42
-     Pert. #  2: Fermi energy shift (Ry) =    -2.7573E-25     2.8699E-42
+     Pert. #  1: Fermi energy shift (Ry) =     5.5145E-25    -7.6530E-42
+     Pert. #  2: Fermi energy shift (Ry) =    -8.2718E-25    -7.6530E-42
 
-      iter #   7 total cpu time :   445.5 secs   av.it.:  22.5
-      thresh= 3.895E-09 alpha_mix =  0.700 |ddv_scf|^2 =  6.952E-17
+      iter #   7 total cpu time :   252.3 secs   av.it.:  22.5
+      thresh= 3.826E-09 alpha_mix =  0.700 |ddv_scf|^2 =  6.709E-17
 
      End of self-consistent calculation
 
@@ -1209,12 +1229,12 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
      q = (    0.000000000   0.000000000   0.000000000 ) 
 
  **************************************************************************
-     freq (    1) =      -0.292542 [THz] =      -9.758149 [cm-1]
-     freq (    2) =      -0.292542 [THz] =      -9.758149 [cm-1]
-     freq (    3) =      -0.275104 [THz] =      -9.176485 [cm-1]
-     freq (    4) =       4.186055 [THz] =     139.631750 [cm-1]
-     freq (    5) =       4.186055 [THz] =     139.631750 [cm-1]
-     freq (    6) =       7.283362 [THz] =     242.946811 [cm-1]
+     freq (    1) =      -0.312938 [THz] =     -10.438498 [cm-1]
+     freq (    2) =      -0.312938 [THz] =     -10.438498 [cm-1]
+     freq (    3) =      -0.297796 [THz] =      -9.933393 [cm-1]
+     freq (    4) =       4.184612 [THz] =     139.583628 [cm-1]
+     freq (    5) =       4.184612 [THz] =     139.583628 [cm-1]
+     freq (    6) =       7.282474 [THz] =     242.917201 [cm-1]
  **************************************************************************
 
      Using the point group D_6h(6/mmm) to classify the modes
@@ -1264,15 +1284,15 @@ E_2u   2.00 -1.00 -1.00  2.00  0.00  0.00 -2.00  1.00  1.00 -2.00  0.00  0.00
 
      Mode symmetry, D_6h(6/mmm) point group:
 
-     freq (   1-   2) =         -9.8  [cm-1]   --> E_1u            I  
-     freq (   3-   3) =         -9.2  [cm-1]   --> A_2u            I  
+     freq (   1-   2) =        -10.4  [cm-1]   --> E_1u            I  
+     freq (   3-   3) =         -9.9  [cm-1]   --> A_2u            I  
      freq (   4-   5) =        139.6  [cm-1]   --> E_2g            R  
      freq (   6-   6) =        242.9  [cm-1]   --> B_1g               
 
-     THERMO_PW    :   8m 3.13s CPU   8m13.17s WALL
+     THERMO_PW    :   4m32.99s CPU   4m40.54s WALL
 
 
-   This run was terminated on:  13:19:26  19Feb2024            
+   This run was terminated on:  11: 1:42  20Feb2024            
 
 =------------------------------------------------------------------------------=
    JOB DONE.
