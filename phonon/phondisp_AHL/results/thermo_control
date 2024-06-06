@@ -1,0 +1,10 @@
+ &INPUT_THERMO
+  what='scf_disp'
+  max_seconds=42300
+  nq1_d=128, nq2_d=128, nq3_d=128
+  q_in_band_form=.true.
+ /
+3
+0 0 0.323338921 30
+0.625 0 0.323338921 30
+0.5 0.288675135 0.323338921 1

@@ -1,0 +1,11 @@
+
+ &inputph
+	prefix='sc',
+	fildyn='sc.dyn.xml',
+	recover=.true.,
+	ldisp=.TRUE.
+	nq1=6,
+	nq2=6,
+	nq3=4,
+	tr2_ph=1.0d-16,
+ /
